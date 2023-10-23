@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>QPArcade</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" type="text/css" href="proj.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Site Title -->
+        <div class="title" id="title">QPArcade</div>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <!-- Navigation Links -->
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="games.html">Games &#9660;</a>
+                    <ul class="dropdown-content">
+                        <!-- Dropdown Game Links -->
+                        <li><a href="rockpaper.html">RockPaperScissors</a></li>
+                        <li><a href="game2">HangMan</a></li>
+                        <li><a href="game3">TicTacToe</a></li>
+                        <li><a href="game4">BlackJack</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact-us">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Game Thumbnails Section -->
+    <section class="game-thumbnails">
+        <!-- Game 1 -->
+        <div class="game-thumbnail">
+            <div class="game-card">
+                <h2>Rock Paper Scissors</h2>
+                <!-- Game Icon -->
+                <div class="game-icon">
+                    <img src="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\ImgRock\rock-removebg-preview (2).png" alt="Game 1" width="100px" height="100px">
+                </div>
+                <!-- Game Description -->
+                <p class="description">Rock, Paper, Scissors is played when each player simultaneously chooses one of three shapes to determine the winner based on a simple set of rules; rock beats scissors, scissors beat paper, and paper beats rock.</p>
+            </div>
+            <!-- Play Button for Game 1 -->
+            <a href="rockpaper.html" class="play-button">Play Now</a>
+        </div>
+
+        <!-- Game 2 -->
+        <div class="game-thumbnail">
+            <div class="game-card">
+                <h2>Hangman</h2>
+                <!-- Game Icon -->
+                <div class="game-icon">
+                    <img src="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\ImgRock\hangman-removebg-preview.png" alt="Game 2" width="100px" height="100px">
+                </div>
+                <!-- Game Description -->
+                <p class="description">Hangman is a word-guessing game where the player attempts to guess the word by guessing the letters with a limited number of tries.</p>
+            </div>
+            <!-- Play Button for Game 2 -->
+            <a href="game2.html" class="play-button">Play Now</a>
+        </div>
+
+        <!-- Game 3 -->
+        <div class="game-thumbnail">
+            <div class="game-card">
+                <h2>Tic Tac Toe</h2>
+                <!-- Game Icon -->
+                <div class="game-icon">
+                    <img src="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\ImgRock\tictactoe (2).png" alt="Game 3" width="100px" height="100px">
+                </div>
+                <!-- Game Description -->
+                <p class="description">Tic Tac Toe is a classic strategy game where players take turns marking a grid with X's or O's to be the first to achieve a row, column, or diagonal of their symbols.</p>
+            </div>
+            <!-- Play Button for Game 3 -->
+            <a href="game3.html" class="play-button">Play Now</a>
+        </div>
+
+        <!-- Game 4 -->
+        <div class="game-thumbnail">
+            <div class="game-card">
+                <h2>Black Jack</h2>
+                <!-- Game Icon -->
+                <div class="game-icon">
+                    <img src="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\ImgRock\blackjack-removebg-preview.png" alt="Game 4" width="100px" height="100px">
+                </div>
+                <!-- Game Description -->
+                <p class="description">Blackjack is a card game where players aim to beat the dealer by obtaining a hand with a total value as close to 21 as possible without exceeding it.</p>
+            </div>
+            <!-- Play Button for Game 4 -->
+            <a href="game4.html" class="play-button">Play Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <div id="contact-us"></div>
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <!-- Name Input -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Message Input -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <!-- Submit Button -->
+            <input type="button" value="Submit" onclick="submitForm()">
+        </form>
+    </section>
+    <!-- JavaScript function for submitting the contact form -->
+    <script>
+        function submitForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            alert("Thank you for your submission!");
+        }
+    </script>
+
+    <!-- Login Form Section -->
+    <section class="login-form">
+        <div id="login"></div>
+        <h2>Login or Sign Up</h2>
+        <form id="login-form">
+            <!-- Username Input -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Login Button -->
+            <input type="button" value="Login" onclick="login()">
+        </form>
+        <p>Don't have an account? <a href="#">Sign up here</a></p>
+    </section>
+
+    <!-- JavaScript function for handling login -->
+    <script>
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            alert("Welcome, " + username + "!");
+        }
+    </script>
+
+    <!-- Leaderboard Section -->
+    <section class="leaderboard">
+        <div id="leaderboard"></div>
+        <h2>Leaderboard</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Leaderboard Entries -->
+                <tr>
+                    <td>1</td>
+                    <td>Player 1</td>
+                    <td>1000</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Player 2</td>
+                    <td>900</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Player 3</td>
+                    <td>800</td>
+                </tr>
+                <!-- Add more rows for additional leaderboard entries -->
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>

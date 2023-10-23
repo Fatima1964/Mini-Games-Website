@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" type="text/css" href="rockpaper.css">
+</head>
+  <header>
+    <div class="title" id="title">Rock Paper Scissors</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="games.html">Games &#9660;</a>
+                <ul class="dropdown-content">
+                    <li><a href="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\rockpaper.html">RockPaperScissors</a></li>
+                    <li><a href="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\TictactoeGame\hangmang.html">HangMan</a></li>
+                    <li><a href="game3.html">TicTacToe</a></li>
+                    <li><a href="game4.html">BlackJack</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact-us">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#leaderboard">Leaderboard</a></li>
+        </ul>
+</nav>
+</header>
+    <section>
+    
+        <!-- Container for the game and instructions -->
+        <div class="game-container">
+            <h2 class="Title">Rules</h2> 
+            <div class="game-display">
+
+            </div>
+            <!-- Game Description: A concise description or instructions on how to play -->
+            <div class="game-description">
+                <p>Rock beats Scissors (Rock wins).
+                    Scissors beat Paper (Scissors wins).
+                    Paper beats Rock (Paper wins).
+                    If both players choose the same shape, it's a tie, and no one gets the point.</p>
+            </div>
+        </div>
+    </section>
+    <body>
+        <link rel="stylesheet" href="C:\Users\Fatim\OneDrive\Desktop\Team Projects\rockpaper.css">
+        <div class="game-container">
+            <h1>Welcome User!</h1>
+            <div class="game">
+                <div class="player-choice">
+                    <h2>Your Choice</h2>
+                    <div class="choice-icons">
+                        <div class="icon" id="rock" onclick="playRound('rock')">
+                            <img src="C:\Users\Fatim\OneDrive\Desktop\Team Projects\rock.png" alt="Rock">
+                        </div>
+                        <div class="icon" id="paper" onclick="playRound('paper')">
+                            <img src="C:\Users\Fatim\OneDrive\Desktop\Team Projects\paper.png" alt="Paper">
+                        </div>
+                        <div class="icon" id="scissors" onclick="playRound('scissors')">
+                            <img src="C:\Users\Fatim\OneDrive\Desktop\Team Projects\scissors.png" alt="Scissors">
+                        </div>
+                    </div>
+                </div>
+                <div class="computer-choice">
+                    <h2>Computer</h2>
+                    <div class="choice-icons">
+                        <div class="icon" id="computer">
+                            <img src="C:\Users\Fatim\OneDrive\Desktop\Team Projects\paper.png" alt="Question">
+                        </div>
+                    </div>
+                </div>
+                <div class="result">
+                    <h2>Score</h2>
+                    <div id="round-result"></div>
+                    <div class="score">
+                        <div id="player-score">Your Score: 0</div>
+                        <div id="computer-score">Computer Score: 0</div>
+                    </div>
+                    <div class="buttons" id="game-buttons">
+                        <button onclick="replayGame()" style="display: none">Replay</button>
+                        <button onclick="exitGame()" style="display: none">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="C:\Users\Fatim\OneDrive\Desktop\Team Projects\rockpaper.js"></script>
+    </body>
+    <div class="scoreboard">
+        <h3 class="heading">Scoreboard</h3>
+        <div class="player-name">Player Name</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Number of Games</th>
+                    <th>Scores</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</section>
+</body>
+</html>
+

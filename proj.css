@@ -1,0 +1,287 @@
+/* Reset some default styles for consistency */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the header */
+header {
+    align-items: center;
+    background-color: #d8b3b3;
+    color: #090808;
+    text-align: center;
+    font-family: 'Segoe UI';
+    font-size: 30px;
+}
+
+/* Style the navigation bar */
+nav ul {
+    background-color: #9a7575;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4efef;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+/* Style the dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    font-size: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Highlight the selected tab */
+nav ul li.active a {
+    font-weight: bold;
+}
+
+/* Style game thumbnails */
+.game-thumbnails {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.game-thumbnail {
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+}
+
+.game-card {
+    position: relative;
+    background: linear-gradient(45deg, #cbc2f6, #f68176);
+    padding: 15px;
+    border: 2px solid #1d1b1b;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(98, 87, 87, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    overflow: hidden;
+    width: 200px;
+    height: 175px;
+    margin-bottom: 30px;
+}
+
+.game-thumbnail:first-child .game-card .game-icon img {
+    position: relative;
+    top: -20px;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-icon img {
+    max-width: 100%;
+    max-height: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.description {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 0.2s;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.game-card:hover .description {
+    display: block;
+    transform: translateY(0);
+}
+
+.play-button {
+    display: flexbox;
+    background-color: #8e6767;
+    color: #fff;
+    padding: 5px 15px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.play-button:hover {
+    background-color: #f37777;
+}
+
+/* Contact form */
+.contact-form {
+    background-color: hsl(0, 9%, 87%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 70px;
+    width: 90%;
+    height: 60%;
+}
+
+.contact-form h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-form form {
+    text-align: left;
+}
+
+.contact-form label {
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+contact-form input[type="button"] {
+    background-color: #aa88e0;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+contact-form input[type="button"]:hover {
+    background-color: #9434bd;
+}
+
+/* Login form */
+.login-form {
+    background-color: #e1dbdb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    height: 60%;
+    margin-top: 50px;
+}
+
+.login-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.login-form form {
+    text-align: left;
+}
+
+.login-form label {
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+login-form input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+login-form input[type="button"] {
+    background-color: #aa88e0;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+login-form input[type="button"]:hover {
+    background-color: #9434bd;
+}
+
+login-form p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Leaderboard */
+.leaderboard {
+    background-color: #e1dbdb;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    height: 60%;
+    margin-top: 50px;
+}
+
+.leaderboard h2 {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #aa88e0;
+    color: #fff;
+   
+}
