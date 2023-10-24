@@ -13,8 +13,6 @@ header {
     text-align: center;
     font-family: 'Segoe UI';
     font-size: 30px;
-    margin-bottom: 100px;
-
 
 }
 
@@ -50,7 +48,6 @@ nav ul li a {
     background-color: #444;
     font-size: 12px;
 
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -81,8 +78,21 @@ nav ul li.active a {
     display: block;
 }
 
-/* ... (previous CSS rules) ... */
-
+.game-instructions {
+    background: linear-gradient(45deg, #cbc2f6, #f68176);
+    border: 2px solid #1d1b1b;
+    font-family: 'Segoe UI';
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(98, 87, 87, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+}
 /* Style the game container */
 .game-container {
     background: linear-gradient(45deg, #cbc2f6, #f68176);
@@ -92,14 +102,13 @@ nav ul li.active a {
     box-shadow: 0px 4px 6px rgba(98, 87, 87, 0.1);
     cursor: pointer;
     transition: transform 0.2s;
-    overflow: hidden;
-    margin-bottom: 70px;
+    margin: 50px auto;
     padding: 15px;
     text-align: center;
     position: relative;
-    margin: 20px auto;
+    margin: 10px auto;
+    margin-bottom: 20px;
     width: 80%;
-
 
 }
 
@@ -125,27 +134,17 @@ nav ul li.active a {
 .game-display {
     padding:10px;
 }
-/* ... (previous CSS rules) ... */
 
 /* Style the scoreboard container */
-.scoreboard {
-    background: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: inline block;
-    margin: 30px auto;
-    width: 80%;
-}
 
 .scoreboard h3 {
     margin: 0;
     padding: 10px;
-    background-color: #333;
+    background-color: #161515;
     color: #fff;
     font-family: 'Segoe UI';
     
 }
-/* ... (previous CSS rules) ... */
 
 /* Style the scoreboard container */
 .scoreboard {
@@ -154,38 +153,41 @@ nav ul li.active a {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-    margin: 20px auto;
+    margin: 50px auto;
     width: 80%;
 }
 
 .scoreboard h3 {
     margin: 0;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: #120404;
+}
+
+.player-name { 
+    margin: 0;
+    padding: 10px;
+    background-color:#010000;
+    margin-top: 5px;
+    color:#f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+
 }
 
 /* Style the table within the scoreboard */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 5px;
+    font-family: 'Segoe UI', sans-serif;
+    border-radius: 5px;
+    
 }
 
 table th, table td {
-    border: 1px solid #ccc;
+    border: 2px solid #140e0e;
     padding: 10px;
     text-align: center;
 }
 
-/* Style the player name entry */
-.player-name {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    background-color: #211f1f;
-    color:#f0f0f0
-
-}
 
 
-/* Add styles for the scoreboard content as needed */

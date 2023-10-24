@@ -141,115 +141,6 @@ nav ul li.active a {
     background-color: #f37777;
 }
 
-/* Contact form */
-.contact-form {
-    background-color: hsl(0, 9%, 87%);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 70px;
-    width: 90%;
-    height: 60%;
-}
-
-.contact-form h1 {
-    text-align: center;
-    color: #333;
-}
-
-.contact-form form {
-    text-align: left;
-}
-
-.contact-form label {
-    color: #555;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-contact-form textarea {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-contact-form input[type="button"] {
-    background-color: #aa88e0;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 30%;
-    font-size: 16px;
-    display: block;
-    margin: 0 auto;
-}
-
-contact-form input[type="button"]:hover {
-    background-color: #9434bd;
-}
-
-/* Login form */
-.login-form {
-    background-color: #e1dbdb;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    height: 60%;
-    margin-top: 50px;
-}
-
-.login-form h2 {
-    text-align: center;
-    color: #333;
-}
-
-.login-form form {
-    text-align: left;
-}
-
-.login-form label {
-    color: #555;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.login-form input[type="text"],
-login-form input[type="password"] {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-login-form input[type="button"] {
-    background-color: #aa88e0;
-    color: #fff;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 30%;
-    font-size: 16px;
-    display: block;
-    margin: 0 auto;
-}
-
-login-form input[type="button"]:hover {
-    background-color: #9434bd;
-}
-
-login-form p {
-    text-align: center;
-    margin-top: 10px;
-}
 
 /* Leaderboard */
 .leaderboard {
@@ -260,7 +151,8 @@ login-form p {
     padding: 20px;
     width: 90%;
     height: 60%;
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-left: 40px
 }
 
 .leaderboard h2 {
@@ -270,9 +162,11 @@ login-form p {
 }
 
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     border-spacing: 0;
+    margin-left: 40px;
+    margin-top: 40px;
 }
 
 th, td {

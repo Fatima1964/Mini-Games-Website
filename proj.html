@@ -100,56 +100,51 @@
     </section>
 
     <!-- Contact Form Section -->
+
     <section class="contact-form">
-        <div id="contact-us"></div>
+        <link rel="stylesheet" type="text/css" href="contact.css">
         <h1>Contact Us</h1>
         <form id="contact-form">
-            <!-- Name Input -->
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <!-- Email Input -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <!-- Message Input -->
             <label for="message">Message:</label>
             <textarea id="message" name="message" required></textarea>
 
-            <!-- Submit Button -->
             <input type="button" value="Submit" onclick="submitForm()">
         </form>
     </section>
-    <!-- JavaScript function for submitting the contact form -->
+
     <script>
         function submitForm() {
             var name = document.getElementById("name").value;
             var email = document.getElementById("email").value;
             var message = document.getElementById("message").value;
+
             alert("Thank you for your submission!");
         }
     </script>
 
     <!-- Login Form Section -->
     <section class="login-form">
-        <div id="login"></div>
+        <link rel="stylesheet" type="text/css" href="login.css">
         <h2>Login or Sign Up</h2>
         <form id="login-form">
-            <!-- Username Input -->
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
-            <!-- Password Input -->
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
 
-            <!-- Login Button -->
             <input type="button" value="Login" onclick="login()">
         </form>
         <p>Don't have an account? <a href="#">Sign up here</a></p>
     </section>
 
-    <!-- JavaScript function for handling login -->
+
     <script>
         function login() {
             var username = document.getElementById("username").value;
@@ -157,7 +152,6 @@
             alert("Welcome, " + username + "!");
         }
     </script>
-
     <!-- Leaderboard Section -->
     <section class="leaderboard">
         <div id="leaderboard"></div>

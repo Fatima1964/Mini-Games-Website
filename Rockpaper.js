@@ -1,6 +1,64 @@
 let playerScore = 0;
 let computerScore = 0;
 let roundCount = 0;
+let scoreboard = [];
+
+function playRound(playerSelection) {
+    if (roundCount < 5) {
+        const computerSelection = computerPlay();
+        let resultMessage;
+
+        if (playerSelection === computerSelection) {
+            resultMessage = "It's a tie!";
+        } else if (
+            (playerSelection === "rock" && computerSelection === "scissors") ||
+            (playerSelection === "paper" && computerSelection === "rock") ||
+            (playerSelection === "scissors" && computerSelection === "paper")
+        ) {
+            resultMessage = `You win! ${playerSelection} beats ${computerSelection}.`;
+            playerScore++;
+        } else {
+            resultMessage = `You lose! ${computerSelection} beats ${playerSelection}.`;
+            computerScore++;
+        }
+
+        const roundResult = {
+            round: roundCount + 1,
+            playerSelection,
+            computerSelection,
+            resultMessage,
+            playerScore,
+            computerScore,
+        };
+
+        scoreboard.push(roundResult);
+
+        updateResult(resultMessage);
+        updateScore();
+
+        roundCount++;
+
+        if (roundCount === 5) {
+            showButtons();
+        }
+    }
+}
+
+// Function to display the scoreboard
+function displayScoreboard() {
+    console.log("Scoreboard:");
+    scoreboard.forEach((roundResult) => {
+        console.log(`Round ${roundResult.round}: Player: ${roundResult.playerSelection}, Computer: ${roundResult.computerSelection}, Result: ${roundResult.resultMessage}`);
+    });
+}
+
+// Rest of your code remains the same
+
+// Example usage to display the scoreboard
+// After the game has ended (roundCount === 5), you can call displayScoreboard() to see the results.
+// displayScoreboard();
+
+
 
 function playRound(playerSelection) {
     if (roundCount < 5) {
