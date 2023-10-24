@@ -81,28 +81,41 @@ nav ul li.active a {
     display: block;
 }
 
-/* ... (previous CSS rules) ... */
 
 /* Style the game container */
 .game-container {
     background: linear-gradient(45deg, #cbc2f6, #f68176);
     border: 2px solid #1d1b1b;
-    font-family: 'Segoe UI';
-    border-radius: 15px;
+    font-family: 'verdana';
+    border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(98, 87, 87, 0.1);
     cursor: pointer;
     transition: transform 0.2s;
     overflow: hidden;
-    margin-bottom: 70px;
     padding: 15px;
     text-align: center;
     position: relative;
-    margin: 20px auto;
+    margin: 40px auto;
     width: 80%;
 
 
 }
+.game-container2{
+        background: linear-gradient(45deg, #cbc2f6, #f68176);
+        border: 2px solid #1d1b1b;
+        font-family: 'Segoe UI';
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(98, 87, 87, 0.1);
+        cursor: pointer;
+        overflow: hidden;
+        transition: transform 0.2s;
+        padding: 15px;
+        text-align: center;
+        position: relative;
+        margin: 60px auto;
+        width: 80%;
 
+}
 /* Style the game description within the container */
 .game-description {
     display: none;
@@ -125,27 +138,7 @@ nav ul li.active a {
 .game-display {
     padding:10px;
 }
-/* ... (previous CSS rules) ... */
 
-/* Style the scoreboard container */
-.scoreboard {
-    background: white;
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: inline block;
-    margin: 30px auto;
-    width: 80%;
-}
-
-.scoreboard h3 {
-    margin: 0;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    font-family: 'Segoe UI';
-    
-}
-/* ... (previous CSS rules) ... */
 
 /* Style the scoreboard container */
 .scoreboard {
@@ -154,37 +147,68 @@ nav ul li.active a {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
-    margin: 20px auto;
+    margin: 90px auto;
     width: 80%;
+    border: 2px solid black;
 }
 
 .scoreboard h3 {
     margin: 0;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
+    font-family: 'Segoe UI';
+    padding: 15px;
+    background-color:#e38b8b;
+    color: #150f0f;
+    border: 1px solid black;
+    
 }
 
 /* Style the table within the scoreboard */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 table th, table td {
-    border: 1px solid #ccc;
+    border: 1px solid #110f0f;
     padding: 10px;
     text-align: center;
+    margin-top: 5px;
 }
 
 /* Style the player name entry */
 .player-name {
-    border: 1px solid #ccc;
+    border: 1px solid #0f0d0d;
+    font-family: 'Segoe UI';
     padding: 10px;
-    margin: 10px;
-    background-color: #211f1f;
-    color:#f0f0f0
+    margin: 0;
+    background-color: #e6abab;
+    color:#190c0c;
 
+}
+
+/* Style the back arrow and label */
+/* Style the back arrow */
+.back-arrow {
+    position: fixed;
+    bottom: -5px;
+    left: 500px;
+    text-decoration: none;
+    display: flex;
+    align-items: center; /* Vertically center the icon */
+    transition: opacity 0.3s;
+}
+
+.back-arrow img {
+    width: 125px; /* Set the width of the icon */
+    height: 125px; /* Set the height of the icon */
+    margin-right: 5px; /* Add spacing between the icon and label */
+    transition: opacity 0.3s;
+}
+
+.back-arrow:hover img {
+    opacity: 0.7; /* Reduce opacity on hover for a visual effect */
 }
 
 
