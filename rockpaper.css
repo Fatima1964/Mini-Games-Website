@@ -42,7 +42,6 @@ nav ul li a {
     font-size: 12px;
 }
 
-
 .dropdown {
     position: relative;
 }
@@ -89,9 +88,9 @@ nav ul li a {
         padding: 10px;
         text-align: center;
         position: relative;
-        margin: 20px auto;
+        margin: auto;
         width: 800px;
-        Height: 800px;
+        Height: 850px;
 }
 
 .game-description {
@@ -109,6 +108,8 @@ nav ul li a {
 
 .game-container:hover .game-description {
     display: block;
+    transform: translateY(50%);
+
 }
 
 .game-display {
@@ -189,7 +190,6 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    color:rgb(4, 4, 4);
 }
 
 h1 {
@@ -206,6 +206,7 @@ h1 {
 .choice-icons {
     display: flex;
     justify-content: center;
+
 }
 
 .icon {
@@ -244,7 +245,8 @@ h1 {
     margin-top: 20px;
 }
 
-.replay-button {
+.clear-button {
+    position: flex;
     background: linear-gradient(to bottom, #4CAF50, #45a049); /* Gradient background */
     color: white;
     border: none;
@@ -253,7 +255,7 @@ h1 {
     padding: 12px 20px;
     margin-bottom: 20px;
     margin-top: 20px;
-    width: 600px;
+    width: 100%;
     height: 50px;
     cursor: pointer;
     transition:ease-in-out, box-shadow 0.3s; /* Smooth transitions */
@@ -262,19 +264,20 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.replay-button:hover {
+.clear-button:hover {
     background: linear-gradient(to bottom, #45a049, #4CAF50); /* Darker gradient on hover */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 .exit-button {
+    position: flex;
     background: linear-gradient(to bottom, #f44336, #d32f2f); /* Gradient background */
     color: white;
     border: none;
     border-radius: 10px;
     font-size: 18px;
-    padding: 12px 20px;
-    width:600px;
+    margin-bottom: 50px;
+    width:100%;
     height:50px;
     cursor: pointer;
     transition: ease-in-out 0.3s, box-shadow 0.3s; /* Smooth transitions */

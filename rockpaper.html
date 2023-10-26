@@ -15,7 +15,7 @@
         <nav>
             <ul>
                 <!-- Navigation Links -->
-                <li><a href="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\proj.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="games.html">Games &#9660;</a>
                     <ul class="dropdown-content">
@@ -52,34 +52,36 @@
             </div>
             <div class="choice-icons">
                 <div class="icon" id="rock" onclick="playRound('rock')">
-                    <img src="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\ImgRock\rock.png"
+                    <img src="ImgRock\Rock (2).png"
                         alt="Rock">
                 </div>
                 <div class="icon" id="paper" onclick="playRound('paper')">
-                    <img src="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\ImgRock\paper.png"
+                    <img src="ImgRock\paper (2).png"
                         alt="Paper">
                 </div>
                 <div class="icon" id="scissors" onclick="playRound('scissors')">
-                    <img src="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\ImgRock\scissors.png"
+                    <img src="ImgRock\scissors (2).png"
                         alt="Scissors">
                 </div>
                 <div class="choice-icons">
                     <div class="icon" id="question">
                         <img
-                            src="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\ImgRock\questionmark.png"
+                            src="ImgRock\questionmark.png"
                             alt="Question">
                     </div>
                 </div>
             </div>
-            <div class="result">
-                <h2>Score</h2>
-                <div id="round-result"></div>
-                <div class="score">
-                    <div id="player-score">Your Score: 0</div>
-                    <div id="computer-score">Computer Score: 0</div>
-                </div>
-                <button class="replay-button" id="replay-button" onclick="replayGame()">Replay</button>
             
+                <div class="scoreboard">
+                    <h3 class="heading">Final Score</h3>
+                    <p>Player Score: <span id="final-player-score">0</span></p>
+                    <p>Computer Score: <span id="final-computer-score">0</span></p>
+                </div>
+            </div>
+            
+            <div class="result"></div>
+
+                <button class="clear-button" id="clear-button">Clear</button>
                 <button class="exit-button" id="exit-button" onclick="exitGame()">Exit</button>
 
                 <div class="scoreboard">
@@ -98,17 +100,47 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+                </div>
         </div>
     </div>
 
-</body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const scoreboardBody = document.getElementById("scoreboard-body");
+
+            function clearScoreboard() {
+                while (scoreboardBody.firstChild) {
+                    scoreboardBody.removeChild(scoreboardBody.firstChild);
+                }
+            }
+
+            // Event listener for the clear button
+            const clearButton = document.getElementById("clear-button");
+            clearButton.addEventListener("click", clearScoreboard);
+        });
+    </script>
+    <script>
+        // Define the restartGame function
+        function restartGame() {
+            roundCount = 0;
+            playerScore = 0;
+            computerScore = 0;
+            updateFinalScore(); // Clear the final score display
+            clearScoreboard(); // Clear the scoreboard
+            document.getElementById("round-result").textContent = ""; // Clear the round result message
+            document.getElementById("exit-button").style.display = "none"; // Hide the exit button
+        }
+    
+        // Set up an event listener for the restart button
+        document.getElementById("clear-button").addEventListener("click", restartGame);
+    </script>
+    
 <footer>
     <a class="back-arrow"
-        href="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\proj.html">
-        <img src="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\ImgRock\homeicon.png"
+        href="index.html">
+        <img src="ImgRock\homeicon.png"
             alt="Home Icon">
     </a>
 </footer>
-
+</body>
 </html>

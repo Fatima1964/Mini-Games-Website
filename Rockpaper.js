@@ -36,8 +36,7 @@ function playRound(playerSelection) {
 
         if (roundCount === 5) {
             updateFinalScore();
-            // Show the replay and exit buttons when the game is over
-            document.getElementById("replay-button").style.display = "block";
+            // Show the exit button when the game is over
             document.getElementById("exit-button").style.display = "block";
         }
     }
@@ -63,21 +62,9 @@ function displayRoundResult(round, result, player, computer) {
     computerCell.textContent = computer;
 }
 
-function replayGame() {
-    roundCount = 0;
-    playerScore = 0;
-    computerScore = 0;
-    updateFinalScore();
-    clearScoreboard();
-    document.getElementById("round-result").textContent = "";
-    // Hide the replay and exit buttons when replaying
-    document.getElementById("replay-button").style.display = "none";
-    document.getElementById("exit-button").style.display = "none";
-}
-
 function exitGame() {
     // Redirect to another page when the "Exit" button is clicked
-    window.location.href = "proj.html"; // Replace with the URL you want to navigate to
+    window.location.href = "index.html"; // Replace with the URL you want to navigate to
 }
 
 function clearScoreboard() {
@@ -88,5 +75,5 @@ function clearScoreboard() {
 }
 
 // Set up event listeners for the buttons
-document.getElementById("replay-button").addEventListener("click", replayGame);
+document.getElementById("clear-button").addEventListener("click", clearScoreboard);
 document.getElementById("exit-button").addEventListener("click", exitGame);
