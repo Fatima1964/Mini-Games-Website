@@ -1,7 +1,15 @@
+// Variables to keep track of game state
 let playerScore = 0;
 let computerScore = 0;
 let roundCount = 0;
-let scoreboard = [];
+
+function updateFinalScore() {
+    const finalPlayerScore = document.getElementById("final-player-score");
+    const finalComputerScore = document.getElementById("final-computer-score");
+
+    finalPlayerScore.textContent = playerScore;
+    finalComputerScore.textContent = computerScore;
+}
 
 function playRound(playerSelection) {
     if (roundCount < 5) {
@@ -22,125 +30,17 @@ function playRound(playerSelection) {
             computerScore++;
         }
 
-        const roundResult = {
-            round: roundCount + 1,
-            playerSelection,
-            computerSelection,
-            resultMessage,
-            playerScore,
-            computerScore,
-        };
-
-        scoreboard.push(roundResult);
-
-        updateResult(resultMessage);
-        updateScore();
-
         roundCount++;
 
-        if (roundCount === 5) {
-            showButtons();
-        }
-    }
-}
-
-// Function to display the scoreboard
-function displayScoreboard() {
-    console.log("Scoreboard:");
-    scoreboard.forEach((roundResult) => {
-        console.log(`Round ${roundResult.round}: Player: ${roundResult.playerSelection}, Computer: ${roundResult.computerSelection}, Result: ${roundResult.resultMessage}`);
-    });
-}
-
-// Rest of your code remains the same
-
-// Example usage to display the scoreboard
-// After the game has ended (roundCount === 5), you can call displayScoreboard() to see the results.
-// displayScoreboard();
-
-
-
-function playRound(playerSelection) {
-    if (roundCount < 5) {
-        const computerSelection = computerPlay();
-
-        if (playerSelection === computerSelection) {
-            updateResult("It's a tie!");
-        } else if (
-            (playerSelection === "rock" && computerSelection === "scissors") ||
-            (playerSelection === "paper" && computerSelection === "rock") ||
-            (playerSelection === "scissors" && computerSelection === "paper")
-        ) {
-            updateResult(`You win! ${playerSelection} beats ${computerSelection}.`);
-            playerScore++;
-        } else {
-            updateResult(`You lose! ${computerSelection} beats ${playerSelection}.`);
-            computerScore++;
-        }
-
-        roundCount++;
-
-        updateScore();
+        displayRoundResult(roundCount, resultMessage, playerScore, computerScore);
 
         if (roundCount === 5) {
-            showButtons();
+            updateFinalScore();
+            // Show the replay and exit buttons when the game is over
+            document.getElementById("replay-button").style.display = "block";
+            document.getElementById("exit-button").style.display = "block";
         }
     }
-}
-
-function showButtons() {
-    const replayButton = document.querySelector("#game-buttons button:first-child");
-    const exitButton = document.querySelector("#game-buttons button:last-child");
-
-    replayButton.style.display = "block";
-    exitButton.style.display = "block";
-}
-
-function replayGame() {
-    roundCount = 0;
-    playerScore = 0;
-    computerScore = 0;
-    resetScore();
-    hideButtons();
-    clearResult();
-}
-
-function exitGame() {
-    // Add code to exit the game or redirect to another page if needed
-}
-
-function resetScore() {
-    const playerScoreElement = document.getElementById("player-score");
-    const computerScoreElement = document.getElementById("computer-score");
-
-    playerScoreElement.textContent = "Your Score: 0";
-    computerScoreElement.textContent = "Computer Score: 0";
-}
-
-function hideButtons() {
-    const replayButton = document.querySelector("#game-buttons button:first-child");
-    const exitButton = document.querySelector("#game-buttons button:last-child");
-
-    replayButton.style.display = "none";
-    exitButton.style.display = "none";
-}
-
-function clearResult() {
-    const roundResult = document.getElementById("round-result");
-    roundResult.textContent = "";
-}
-
-function updateResult(message) {
-    const roundResult = document.getElementById("round-result");
-    roundResult.textContent = message;
-}
-
-function updateScore() {
-    const playerScoreElement = document.getElementById("player-score");
-    const computerScoreElement = document.getElementById("computer-score");
-
-    playerScoreElement.textContent = `Your Score: ${playerScore}`;
-    computerScoreElement.textContent = `Computer Score: ${computerScore}`;
 }
 
 function computerPlay() {
@@ -149,4 +49,44 @@ function computerPlay() {
     return choices[randomIndex];
 }
 
-updateScore();  // Initialize the score display
+function displayRoundResult(round, result, player, computer) {
+    const scoreboardBody = document.getElementById("scoreboard-body");
+    const newRow = scoreboardBody.insertRow();
+    const roundCell = newRow.insertCell(0);
+    const resultCell = newRow.insertCell(1);
+    const playerCell = newRow.insertCell(2);
+    const computerCell = newRow.insertCell(3);
+
+    roundCell.textContent = round;
+    resultCell.textContent = result;
+    playerCell.textContent = player;
+    computerCell.textContent = computer;
+}
+
+function replayGame() {
+    roundCount = 0;
+    playerScore = 0;
+    computerScore = 0;
+    updateFinalScore();
+    clearScoreboard();
+    document.getElementById("round-result").textContent = "";
+    // Hide the replay and exit buttons when replaying
+    document.getElementById("replay-button").style.display = "none";
+    document.getElementById("exit-button").style.display = "none";
+}
+
+function exitGame() {
+    // Redirect to another page when the "Exit" button is clicked
+    window.location.href = "proj.html"; // Replace with the URL you want to navigate to
+}
+
+function clearScoreboard() {
+    const scoreboardBody = document.getElementById("scoreboard-body");
+    while (scoreboardBody.firstChild) {
+        scoreboardBody.removeChild(scoreboardBody.firstChild);
+    }
+}
+
+// Set up event listeners for the buttons
+document.getElementById("replay-button").addEventListener("click", replayGame);
+document.getElementById("exit-button").addEventListener("click", exitGame);

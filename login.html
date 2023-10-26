@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="login.css">
 <head>
-    
 </head>
 <body>
     <header>
@@ -14,7 +13,7 @@
     
     <nav>
         <ul>
-            <!-- Your navigation links -->
+            
         </ul>
     </nav>
 
@@ -24,16 +23,12 @@
         <form id="login-form">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
-
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
-
             <input type="button" value="Login" onclick="login()">
         </form>
         <p>Don't have an account? <a href="#">Sign up here</a></p>
     </section>
-
-
     <script>
         function login() {
             var username = document.getElementById("username").value;

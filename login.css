@@ -1,17 +1,18 @@
 .login-form {
-    background-color: #d4cccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 40px;
-    margin-left: 40px;
+    background: linear-gradient(to bottom, #f9f7f6, #f1eaf6); 
+    padding: 40px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    border: 1px solid #d576c7; 
+    border-radius: 15px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
     margin-top: 60px;
 }
 
-
 .login-form h2 {
-    text-align: center;
+    font-size: 32px; 
     color: #333;
+    margin-bottom: 20px;
 }
 
 .login-form form {
@@ -34,7 +35,7 @@
 }
 
 .login-form input[type="button"] {
-    background-color: #aa88e0;
+    background: linear-gradient(to bottom, #aa88e0, #9434bd); 
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -43,10 +44,11 @@
     width: 97%;
     font-size: 16px;
     margin-top: 20px;
+    transition: transform 0.3s; 
 }
 
 .login-form input[type="button"]:hover {
-    background-color: #9434bd;
+    background: linear-gradient(to bottom, #9434bd, #aa88e0); 
 }
 
 .login-form p {

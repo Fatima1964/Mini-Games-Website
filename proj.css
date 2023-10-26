@@ -1,4 +1,4 @@
-/* Reset some default styles for consistency */
+/* default styles */
 body, ul {
     margin: 0;
     padding: 0;
@@ -14,6 +14,12 @@ header {
     font-family: 'Segoe UI';
     font-size: 30px;
 }
+.title {
+font-size: 36px;
+margin: 0;
+color: #333;
+}
+
 
 /* Style the navigation bar */
 nav ul {
@@ -46,7 +52,11 @@ nav ul li a {
     display: none;
     position: absolute;
     background-color: #444;
-    font-size: 10px;
+    font-size: 10px !important;
+    width: 180px;
+    display:flexbox;
+    margin-left: 155px;
+    text-align: left;
 }
 
 .dropdown:hover .dropdown-content {
@@ -129,7 +139,7 @@ nav ul li.active a {
     display: flexbox;
     background-color: #8e6767;
     color: #fff;
-    padding: 5px 15px;
+    padding: 15px 15px;
     text-decoration: none;
     text-align: center;
     margin-top: 30px;
@@ -141,23 +151,21 @@ nav ul li.active a {
     background-color: #f37777;
 }
 
-
 /* Leaderboard */
 .leaderboard {
-    background-color: #e1dbdb;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #f9f7f6, #f1eaf6); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     text-align: center;
-    padding: 20px;
-    width: 90%;
-    height: 60%;
+    padding: 40px; 
+    max-width: 800px; 
+    margin: 0 auto; 
     margin-top: 60px;
-    margin-left: 40px
 }
 
 .leaderboard h2 {
     color: #333;
-    font-size: 26px;
+    font-size: 28px; 
     margin-bottom: 20px;
 }
 
@@ -165,17 +173,15 @@ table {
     width: 90%;
     border-collapse: collapse;
     border-spacing: 0;
-    margin-left: 40px;
-    margin-top: 40px;
+    margin: 40px auto; 
 }
 
 th, td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 15px; 
+    border-bottom: 1px solid #ccc; 
 }
 
 th {
-    background-color: #aa88e0;
+    background: linear-gradient(to bottom, #aa88e0, #9434bd); /* Gradient background for table headers */
     color: #fff;
-   
 }

@@ -13,18 +13,18 @@
     <!-- Header Section -->
     <header>
         <!-- Site Title -->
-        <div class="title" id="title">QPArcade</div>
+        <h1 class="title" id="title">QPArcade</h1>
         <!-- Navigation Menu -->
         <nav>
             <ul>
                 <!-- Navigation Links -->
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
+                <li><a href="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\proj.html">Home</a></li>
+                            <li class="dropdown">
                     <a href="games.html">Games &#9660;</a>
                     <ul class="dropdown-content">
                         <!-- Dropdown Game Links -->
                         <li><a href="rockpaper.html">RockPaperScissors</a></li>
-                        <li><a href="game2">HangMan</a></li>
+                        <li><a href="game2">Hangman</a></li>
                         <li><a href="game3">TicTacToe</a></li>
                         <li><a href="game4">BlackJack</a></li>
                     </ul>
@@ -35,9 +35,10 @@
             </ul>
         </nav>
     </header>
-
+<body>
     <!-- Game Thumbnails Section -->
     <section class="game-thumbnails">
+
         <!-- Game 1 -->
         <div class="game-thumbnail">
             <div class="game-card">
@@ -47,7 +48,7 @@
                     <img src="C:\Users\Fatim\OneDrive\Desktop\Project\Portfolio\Mini-Games-Website\ImgRock\rock-removebg-preview (2).png" alt="Game 1" width="100px" height="100px">
                 </div>
                 <!-- Game Description -->
-                <p class="description">Rock, Paper, Scissors is played when each player simultaneously chooses one of three shapes to determine the winner based on a simple set of rules; rock beats scissors, scissors beat paper, and paper beats rock.</p>
+                <p class="description">Rock, paper, scissors is a decision-making game that relies on random choices of either rock, paper or scissors.</p>
             </div>
             <!-- Play Button for Game 1 -->
             <a href="rockpaper.html" class="play-button">Play Now</a>
@@ -84,7 +85,7 @@
         </div>
 
         <!-- Game 4 -->
-        <div class="game-thumbnail">
+                <div class="game-thumbnail">
             <div class="game-card">
                 <h2>Black Jack</h2>
                 <!-- Game Icon -->
@@ -99,9 +100,14 @@
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-
-    <section class="contact-form">
+    <!-- Contact us and About Us Section -->
+    <section id="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are Suganthi, Fatima, Sundas, and Fatimah—four individuals brought together by a shared passion for making a positive impact. With diverse backgrounds and unique perspectives, we collaborate to inspire change and create a brighter future. Our combined talents and unwavering dedication drive us to address challenges and shape a better world for all.</p> 
+        </div>
+    </section>
+    <section class="contact-form" id="contact-us">
         <link rel="stylesheet" type="text/css" href="contact.css">
         <h1>Contact Us</h1>
         <form id="contact-form">
@@ -129,7 +135,7 @@
     </script>
 
     <!-- Login Form Section -->
-    <section class="login-form">
+    <section class="login-form" id="login">
         <link rel="stylesheet" type="text/css" href="login.css">
         <h2>Login or Sign Up</h2>
         <form id="login-form">
@@ -143,8 +149,6 @@
         </form>
         <p>Don't have an account? <a href="#">Sign up here</a></p>
     </section>
-
-
     <script>
         function login() {
             var username = document.getElementById("username").value;
@@ -152,8 +156,9 @@
             alert("Welcome, " + username + "!");
         }
     </script>
+
     <!-- Leaderboard Section -->
-    <section class="leaderboard">
+    <section class="leaderboard" id="leaderboard">
         <div id="leaderboard"></div>
         <h2>Leaderboard</h2>
         <table>
@@ -165,7 +170,9 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Sample Leaderboard Entries -->
+
+                <!-- Sample Leaderboard -->
+                <!-- Placeholder-Add more rows for additional leaderboard entries if needed. -->
                 <tr>
                     <td>1</td>
                     <td>Player 1</td>
@@ -181,9 +188,11 @@
                     <td>Player 3</td>
                     <td>800</td>
                 </tr>
-                <!-- Add more rows for additional leaderboard entries -->
             </tbody>
         </table>
     </section>
 </body>
+<footer>
+    <div class="links-social"></div> 
+</footer>
 </html>
