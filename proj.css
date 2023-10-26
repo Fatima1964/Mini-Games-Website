@@ -11,7 +11,7 @@ header {
     background-color: #d8b3b3;
     color: #090808;
     text-align: center;
-    font-family: 'verdana, sans serif';
+    font-family: 'Segoe UI';
     font-size: 30px;
 }
 .title {
@@ -39,9 +39,18 @@ nav ul li a {
     text-decoration: none;
     color: #f4efef;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     font-size: 20px;
+    transition: background-color 0.3s;
+
 }
+
+nav ul li a:hover {
+    background-color: #765a68;
+    color: #ffff;
+
+}
+
 
 /* Style the dropdown menu */
 .dropdown {
@@ -156,7 +165,7 @@ nav ul li.active a {
     border-radius: 15px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     text-align: center;
-    padding: 40px; 
+    padding: 20px; 
     max-width: 800px; 
     margin: 0 auto; 
     margin-top: 60px;

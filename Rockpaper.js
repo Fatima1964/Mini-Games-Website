@@ -75,5 +75,4 @@ function clearScoreboard() {
 }
 
 // Set up event listeners for the buttons
-document.getElementById("clear-button").addEventListener("click", clearScoreboard);
-document.getElementById("exit-button").addEventListener("click", exitGame);
+

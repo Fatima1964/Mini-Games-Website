@@ -11,7 +11,6 @@ header {
     color: #090808;
     text-align: center;
     font-family: 'Segoe UI';
-    font-size: 24px;
     margin-bottom: 50px;
 }
 
@@ -33,8 +32,14 @@ nav ul li a {
     color: #f4efef;
     text-align: center;
     padding: 20px;
+    transition: background-color 0.3s;
 }
 
+nav ul li a:hover {
+    background-color: #765a68;
+    color: #ffff;
+
+}
 .dropdown-content {
     display: none;
     position: absolute;
@@ -119,7 +124,7 @@ nav ul li a {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid #1d1b1b; 
     background-color: #f0f8ff; 
@@ -169,27 +174,20 @@ table tr:hover {
     opacity: 0.7; 
 }
 
-/* Reset some default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #d4d0d0;
-    margin: 0;
-    padding: 0;
-
-}
 
 .game-container {
     padding-top:20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -200,7 +198,7 @@ h1 {
 .player-choice, .computer-choice, .result {
     flex: 1;
     text-align: center;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .choice-icons {
@@ -214,9 +212,9 @@ h1 {
     padding: 10px;
     border: 2px solid #333;
     border-radius: 10px;
-    margin: 5px;
+    margin-top: 30px;
+    margin-right: 10px;
     width: 100px;
-    text-align: center;
     background-color: #fff; 
     transition: background-color 0.2s;
 }
@@ -276,7 +274,7 @@ h1 {
     border: none;
     border-radius: 10px;
     font-size: 18px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     width:100%;
     height:50px;
     cursor: pointer;
@@ -290,4 +288,31 @@ h1 {
     background: linear-gradient(to bottom, #d32f2f, #f44336); 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.4);
 }
+
+.scoreboard{
+    padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .game-container,
+    .game-container2 {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .back-arrow {
+        left: 10px;
+    }
+
+    .icon {
+        margin: 10px;
+    }
+}
+
+
+
+
+
 

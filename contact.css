@@ -7,6 +7,7 @@
     border-radius: 15px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin-top: 60px;
+    text-align: center;
 }
 
 .contact-form h1 {
@@ -52,10 +53,11 @@
 }
 
 #about-us {
+    position:flex;
     background: linear-gradient(to bottom, #f9f7f6, #f1eaf6);
     padding: 40px;
     text-align: center;
-    width: 800px;
+    width: 80%;
     margin:0 auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
@@ -88,4 +90,26 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    #about-us {
+        padding: 20px;
+        border-radius: 0;
+    }
 
+    #about-us h2 {
+        font-size: 24px;
+    }
+
+    #about-us p {
+        font-size: 16px;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+        transition: transform 0.3s;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+}
