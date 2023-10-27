@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack Game</title>
+    <link rel="stylesheet" href="bj.css">
+    <!-- Header Section -->
+    <header>
+        <!-- Site Title -->
+        <h1 class="title" id="title">QPArcade</h1>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <!-- Navigation Links -->
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="games.html">Games &#9660;</a>
+                    <ul class="dropdown-content">
+                        <!-- Dropdown Game Links -->
+                        <li><a href="rockpaper.html">RockPaperScissors</a></li>
+                        <li><a href="game2">Hangman</a></li>
+                        <li><a href="game3">TicTacToe</a></li>
+                        <li><a href="game4">BlackJack</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact-us">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#leaderboard">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>BlackJack Game</h1>
+        <P>Select a Number</P>
+        <div id="buttons">
+            <button class="numberbutton" data-value="1">1</button>
+            <button class="numberbutton" data-value="2">2</button>
+            <button class="numberbutton" data-value="3">3</button>
+            <button class="numberbutton" data-value="4">4</button>
+            <button class="numberbutton" data-value="5">5</button>
+        </div>
+    
+    <div id="result"></div>
+    <button id = "replayButton" style="display: none;">PlayAgain</button>
+</div>
+<script src="bj.js"></script>
+<footer>
+    <a class="back-arrow"
+        href="index.html">
+        <img src="ImgRock\homeicon.png"
+            alt="Home Icon">
+    </a>
+</footer>
+</body>
+
+</html>

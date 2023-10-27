@@ -1,0 +1,117 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+
+    align-items: center;
+    background-color: #d8b3b3;
+    color: #090808;
+    text-align: center;
+    font-family: 'Segoe UI';
+    margin-bottom: 50px;
+}
+
+nav ul {
+    background-color: #9a7575;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4efef;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #765a68;
+    color: #ffff;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    font-size: 12px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    width: 200px;
+    top: 35px;
+    left: 0;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Highlight the selected tab */
+nav ul li.active a {
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+    background: linear-gradient(45deg, #cbc2f6, #f68176);
+    border: 2px solid #1d1b1b;
+    font-family: 'verdana';
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(98, 87, 87, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    margin: 10px auto;
+    width: 800px;
+    height: 500px;
+    }
+    
+
+
+.numberbutton{
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button#replayButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button#replayButton:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
