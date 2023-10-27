@@ -40,25 +40,14 @@ nav ul li a:hover {
     color: #ffff;
 
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #444;
-    font-size: 12px;
-}
-
-.dropdown {
-    position: relative;
-}
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #444;
-    width: 200px;
-    top: 35px;
-    left: 0;
-    z-index: 1;
+        display: none;
+        position: absolute;
+        background-color: #333;
+        font-size: 14px;
+        z-index: 1;
+    
 }
 
 .dropdown:hover .dropdown-content {
@@ -82,7 +71,7 @@ nav ul li a:hover {
 }
 
 .game-container2{
-        background: linear-gradient(45deg, #cbc2f6, #e5b7b2);
+        background: linear-gradient(45deg, #cbc2f6, #ebc7c3);
         border: 2px solid #1d1b1b;
         font-family: 'Segoe UI';
         border-radius: 10px;

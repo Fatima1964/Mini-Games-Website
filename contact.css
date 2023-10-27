@@ -1,19 +1,28 @@
+/* Contact Form */
+
 .contact-form {
     background: linear-gradient(to bottom, #f9f7f6, #f1eaf6); 
     padding: 40px; 
-    max-width: 800px; 
+    max-width: 600px; 
     margin: 0 auto; 
-    border: 1px solid #d576c7;
+    border-style: double;
     border-radius: 15px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin-top: 60px;
     text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.contact-form:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Apply a stronger box-shadow on hover */
+    transform: scale(1.05); /* Enlarge the container on hover */
 }
 
 .contact-form h1 {
     font-size: 32px; 
     color: #333;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .contact-form form {
@@ -50,14 +59,16 @@
 
 .contact-form input[type="button"]:hover {
     background: linear-gradient(to bottom, #9434bd, #aa88e0);
+    transform: scale(1.05); /* Enlarge the button on hover */
 }
 
 #about-us {
     position:flex;
+    border-style: double;
     background: linear-gradient(to bottom, #f9f7f6, #f1eaf6);
-    padding: 40px;
+    padding: 50px;
     text-align: center;
-    width: 80%;
+    max-width: 700px;
     margin:0 auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 15px;

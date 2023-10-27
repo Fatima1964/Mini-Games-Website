@@ -3,6 +3,7 @@ body, ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 /* Style the header */
@@ -27,20 +28,19 @@ nav ul {
     text-align: center;
     padding: 30px;
     font-family: 'Segoe UI';
-    font-size: 18px;
+    font-size: 20px;
+    vertical-align: top;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #f4efef;
     text-align: center;
-    padding: 15px;
-    font-size: 20px;
+    padding: 20px;
     transition: background-color 0.3s;
 
 }
@@ -51,23 +51,14 @@ nav ul li a:hover {
 
 }
 
-
 /* Style the dropdown menu */
-.dropdown {
-    position: relative;
-}
-
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #444;
-    font-size: 10px !important;
-    width: 180px;
-    display:flexbox;
-    margin-left: 155px;
-    text-align: left;
+    background-color: #333;
+    font-size: 14px;
+    z-index: 1;
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -160,15 +151,23 @@ nav ul li.active a {
 }
 
 /* Leaderboard */
+/* Leaderboard */
 .leaderboard {
+    border-style: double;
     background: linear-gradient(to bottom, #f9f7f6, #f1eaf6); 
     border-radius: 15px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     text-align: center;
     padding: 20px; 
-    max-width: 800px; 
+    max-width: 650px; 
     margin: 0 auto; 
     margin-top: 60px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.leaderboard:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Apply a stronger box-shadow on hover */
+    transform: scale(1.05); /* Enlarge the container on hover */
 }
 
 .leaderboard h2 {
@@ -187,9 +186,20 @@ table {
 th, td {
     padding: 15px; 
     border-bottom: 1px solid #ccc; 
+    transition: background-color 0.3s; /* Add a smooth transition to the background color */
 }
 
 th {
     background: linear-gradient(to bottom, #aa88e0, #9434bd); /* Gradient background for table headers */
     color: #fff;
+}
+
+tr:hover {
+    background-color: #ebcff1; /* Change the background color of table rows on hover */
+}
+
+.links-social {
+    margin-top: 60px;
+    margin-left: 400px;
+
 }

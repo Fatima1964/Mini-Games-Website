@@ -10,7 +10,7 @@ function updateFinalScore() {
     finalPlayerScore.textContent = playerScore;
     finalComputerScore.textContent = computerScore;
 }
-
+//
 function playRound(playerSelection) {
     if (roundCount < 5) {
         const computerSelection = computerPlay();
@@ -36,7 +36,6 @@ function playRound(playerSelection) {
 
         if (roundCount === 5) {
             updateFinalScore();
-            // Show the exit button when the game is over
             document.getElementById("exit-button").style.display = "block";
         }
     }
@@ -47,7 +46,7 @@ function computerPlay() {
     const randomIndex = Math.floor(Math.random() * choices.length);
     return choices[randomIndex];
 }
-
+//Scoreboard//
 function displayRoundResult(round, result, player, computer) {
     const scoreboardBody = document.getElementById("scoreboard-body");
     const newRow = scoreboardBody.insertRow();
@@ -63,8 +62,8 @@ function displayRoundResult(round, result, player, computer) {
 }
 
 function exitGame() {
-    // Redirect to another page when the "Exit" button is clicked
-    window.location.href = "index.html"; // Replace with the URL you want to navigate to
+//Exit command//
+    window.location.href = "index.html"; 
 }
 
 function clearScoreboard() {
@@ -74,5 +73,4 @@ function clearScoreboard() {
     }
 }
 
-// Set up event listeners for the buttons
 
