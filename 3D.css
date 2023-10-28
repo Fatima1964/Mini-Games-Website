@@ -1,3 +1,12 @@
+.Title {
+    text-align: center; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    position: absolute; 
+    top: 0; 
+    width: 100%; 
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -72,4 +81,25 @@ bottom { transform: rotateX(-90deg) translateZ(100px); }
 
 .start-button:hover {
     background: #14c026;
+}
+
+.back-arrow {
+    position: fixed;
+    bottom: -5px;
+    left: 500px;
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+    transition: opacity 0.3s;
+}
+
+.back-arrow img {
+    width: 125px; 
+    height: 125px; 
+    margin-right: 5px; 
+    transition: opacity 0.3s;
+}
+
+.back-arrow:hover img {
+    opacity: 0.7; 
 }

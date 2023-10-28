@@ -38,7 +38,7 @@ nav ul li a {
     text-decoration: none;
     color: #f4efef;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     transition: background-color 0.3s;
 
 }
@@ -70,8 +70,8 @@ nav ul li.active a {
 /* Contact Form */
 .contact-form {
     background: linear-gradient(to bottom, #f9f7f6, #f1eaf6); 
-    padding: 80px; 
-    max-width: 600px; 
+    padding: 60px; 
+    max-width: 700px; 
     margin: 0 auto; 
     border-style: double;
     border-radius: 15px; 
@@ -90,7 +90,7 @@ nav ul li.active a {
 .contact-form h1 {
     font-size: 32px; 
     color: #333;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .contact-form form {
@@ -140,7 +140,21 @@ nav ul li.active a {
     margin:0 auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    margin-top: 30px;
+    margin-top: 60px;
+}
+
+#about-us h2 {
+    font-size: 32px;
+    color: #120c0c;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 18px;
+    color: #0d0909;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: Arial;
 }
 
 #about-us h2 {
@@ -167,49 +181,6 @@ nav ul li.active a {
 .container:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-#photos {
-    position:flex;
-    border-style: double;
-    background: linear-gradient(to bottom, #f9f7f6, #f1eaf6);
-    padding: 75px;
-    text-align: center;
-    max-width: 100px;
-    margin:0 auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
-    margin-top: 30px;
-}
-
-#about-us h2 {
-    font-size: 32px;
-    color: #120c0c;
-    margin-bottom: 20px;
-}
-
-#about-us p {
-    font-size: 18px;
-    color: #0d0909;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    font-family: Arial;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px;
-    transition: transform 0.3s;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-.container:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-.image {
-    position: relative;
 }
 
 .back-arrow {

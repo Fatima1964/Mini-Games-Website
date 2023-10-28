@@ -10,10 +10,9 @@ body, ul {
 header {
     align-items: center;
     background-color: #d8b3b3;
-    color: #090808;
     text-align: center;
     font-family:'Segoe';
-    font-size: 30px;
+
 }
 .title {
 font-size: 36px;
@@ -38,7 +37,7 @@ nav ul li a {
     text-decoration: none;
     color: #f4efef;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
     transition: background-color 0.3s;
 
 }
@@ -61,7 +60,6 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Highlight the selected tab */
 nav ul li.active a {
     font-weight: bold;
 }
@@ -191,55 +189,9 @@ nav ul li.active a {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
-/* Leaderboard */
-.leaderboard {
-    border-style: double;
-    background: linear-gradient(to bottom, #f9f7f6, #f1eaf6); 
-    border-radius: 15px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    text-align: center;
-    padding: 20px; 
-    max-width: 650px; 
-    margin: 0 auto; 
-    margin-top: 60px;
-    transition: box-shadow 0.3s, transform 0.3s;
-}
-
-.leaderboard:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
-    transform: scale(1.05);
-}
-
-.leaderboard h2 {
-    color: #333;
-    font-size: 28px; 
-    margin-bottom: 20px;
-}
-
-table {
-    width: 90%;
-    border-collapse: collapse;
-    border-spacing: 0;
-    margin: 40px auto; 
-}
-
-th, td {
-    padding: 15px; 
-    border-bottom: 1px solid #ccc; 
-    transition: background-color 0.3s; 
-}
-
-th {
-    background: linear-gradient(to bottom, #aa88e0, #9434bd); 
-    color: #fff;
-}
-
-tr:hover {
-    background-color: #ebcff1; 
-}
-
 .links-social {
     margin-top: 60px;
     margin-left: 400px;
 
 }
+
