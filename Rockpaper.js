@@ -10,7 +10,7 @@ function updateFinalScore() {
     finalPlayerScore.textContent = playerScore;
     finalComputerScore.textContent = computerScore;
 }
-//
+ 
 function playRound(playerSelection) {
     if (roundCount < 5) {
         const computerSelection = computerPlay();

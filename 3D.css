@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    perspective: 1200px; 
+    background: linear-gradient(135deg, #d6e0e6, #ebd7d7);
+}
+
+.scene {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 10s infinite linear;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    transform: rotateX(0deg) rotateY(0deg);
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(26, 23, 25, 0.9);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-align:center;
+
+}
+
+.front { transform: translateZ(100px); }
+.back {
+    transform: rotateY(180deg) translateZ(100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right { transform: rotateY(90deg) translateZ(100px); }
+left { transform: rotateY(-90deg) translateZ(100px); }
+top { transform: rotateX(90deg) translateZ(100px); }
+bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes spin {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+}
+
+.start-button {
+    position: absolute;
+    bottom: 20px;
+    left: 500px;
+    background: #d77219;
+    color: #fff;
+    border: none;
+    padding: 20px 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none; 
+    transition: transformZ(10px) 0.3s;
+}
+
+.start-button:hover {
+    background: #14c026;
+}

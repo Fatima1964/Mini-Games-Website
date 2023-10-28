@@ -12,7 +12,7 @@ header {
     background-color: #d8b3b3;
     color: #090808;
     text-align: center;
-    font-family: 'Segoe UI';
+    font-family:'Segoe';
     font-size: 30px;
 }
 .title {
@@ -21,13 +21,11 @@ margin: 0;
 color: #333;
 }
 
-
 /* Style the navigation bar */
 nav ul {
     background-color: #9a7575;
     text-align: center;
     padding: 30px;
-    font-family: 'Segoe UI';
     font-size: 20px;
     vertical-align: top;
 }
@@ -95,7 +93,7 @@ nav ul li.active a {
     overflow: hidden;
     width: 200px;
     height: 175px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .game-thumbnail:first-child .game-card .game-icon img {
@@ -144,13 +142,55 @@ nav ul li.active a {
     margin-top: 30px;
     border-radius: 10px;
     font-size: 20px;
+    margin-bottom: 80px;
 }
 
 .play-button:hover {
     background-color: #f37777;
 }
 
-/* Leaderboard */
+#about-us {
+    position: flex;
+    border-style: double;
+    background: linear-gradient(to bottom, #f9f7f6, #f1eaf6);
+    padding: 50px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-top: 60px;
+}
+
+#about-us h2 {
+    font-size: 32px;
+    color: #120c0c; 
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 18px;
+    color: #0d0909; 
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background: #f4d2d2; 
+    color: #bf6f6f; 
+}
+
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
 /* Leaderboard */
 .leaderboard {
     border-style: double;
@@ -166,8 +206,8 @@ nav ul li.active a {
 }
 
 .leaderboard:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Apply a stronger box-shadow on hover */
-    transform: scale(1.05); /* Enlarge the container on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
 }
 
 .leaderboard h2 {
@@ -186,16 +226,16 @@ table {
 th, td {
     padding: 15px; 
     border-bottom: 1px solid #ccc; 
-    transition: background-color 0.3s; /* Add a smooth transition to the background color */
+    transition: background-color 0.3s; 
 }
 
 th {
-    background: linear-gradient(to bottom, #aa88e0, #9434bd); /* Gradient background for table headers */
+    background: linear-gradient(to bottom, #aa88e0, #9434bd); 
     color: #fff;
 }
 
 tr:hover {
-    background-color: #ebcff1; /* Change the background color of table rows on hover */
+    background-color: #ebcff1; 
 }
 
 .links-social {

@@ -1,28 +1,96 @@
-/* Contact Form */
+/* default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
 
+/* Style the header */
+header {
+    align-items: center;
+    background-color: #d8b3b3;
+    color: #090808;
+    text-align: center;
+    font-family:'Segoe';
+    font-size: 30px;
+}
+.title {
+font-size: 36px;
+margin: 0;
+color: #333;
+}
+
+/* Style the navigation bar */
+nav ul {
+    background-color: #9a7575;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f4efef;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s;
+
+}
+
+nav ul li a:hover {
+    background-color: #765a68;
+    color: #ffff;
+
+}
+
+/* Style the dropdown menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    font-size: 14px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Highlight the selected tab */
+nav ul li.active a {
+    font-weight: bold;
+}
+
+
+/* Contact Form */
 .contact-form {
     background: linear-gradient(to bottom, #f9f7f6, #f1eaf6); 
-    padding: 40px; 
+    padding: 80px; 
     max-width: 600px; 
     margin: 0 auto; 
     border-style: double;
     border-radius: 15px; 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     margin-top: 60px;
+    margin-bottom: 60px;
     text-align: center;
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .contact-form:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Apply a stronger box-shadow on hover */
-    transform: scale(1.05); /* Enlarge the container on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
 }
 
 .contact-form h1 {
     font-size: 32px; 
     color: #333;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .contact-form form {
@@ -46,7 +114,7 @@
 }
 
 .contact-form input[type="button"] {
-    background: linear-gradient(to bottom, #aa88e0, #9434bd); /* Gradient background for the button */
+    background: linear-gradient(to bottom, #aa88e0, #9434bd); 
     color: #fff;
     border: none;
     padding: 15px 30px;
@@ -59,20 +127,20 @@
 
 .contact-form input[type="button"]:hover {
     background: linear-gradient(to bottom, #9434bd, #aa88e0);
-    transform: scale(1.05); /* Enlarge the button on hover */
+    transform: scale(1.05); 
 }
 
 #about-us {
     position:flex;
     border-style: double;
     background: linear-gradient(to bottom, #f9f7f6, #f1eaf6);
-    padding: 50px;
+    padding: 75px;
     text-align: center;
     max-width: 700px;
     margin:0 auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 #about-us h2 {
@@ -86,7 +154,7 @@
     color: #0d0909;
     line-height: 1.6;
     margin-bottom: 30px;
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
 .container {
@@ -99,6 +167,70 @@
 .container:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#photos {
+    position:flex;
+    border-style: double;
+    background: linear-gradient(to bottom, #f9f7f6, #f1eaf6);
+    padding: 75px;
+    text-align: center;
+    max-width: 100px;
+    margin:0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+#about-us h2 {
+    font-size: 32px;
+    color: #120c0c;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 18px;
+    color: #0d0909;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: Arial;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+    position: relative;
+}
+
+.back-arrow {
+    position: fixed;
+    bottom: -5px;
+    left: 500px;
+    text-decoration: none;
+    display: flex;
+    align-items: center; 
+    transition: opacity 0.3s;
+}
+
+.back-arrow img {
+    width: 125px; 
+    height: 125px; 
+    margin-right: 5px; 
+    transition: opacity 0.3s;
+}
+
+.back-arrow:hover img {
+    opacity: 0.7; 
 }
 
 @media (max-width: 768px) {

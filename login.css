@@ -13,8 +13,8 @@
 }
 
 .login-form:hover {
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Apply a stronger box-shadow on hover */
-    transform: scale(1.05); /* Enlarge the container on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); 
 }
 
 .login-form h2 {
@@ -57,7 +57,7 @@
 
 .login-form input[type="button"]:hover {
     background: linear-gradient(to bottom, #9434bd, #aa88e0); 
-    transform: scale(1.05); /* Enlarge the button on hover */
+    transform: scale(1.05); 
 }
 
 .login-form p {

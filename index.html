@@ -26,16 +26,23 @@
                         <li><a href="rockpaper.html">Rock Paper Scissors</a></li>
                         <li><a href="game2">Hang Man</a></li>
                         <li><a href="game3">Tic Tac Toe</a></li>
-                        <li><a href="game4">Black Jack</a></li>
+                        <li><a href="bj.html">Black Jack</a></li>
                     </ul>
                 </li>
-                <li><a href="#contact-us">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="#login">Login</a></li>
                 <li><a href="#leaderboard">Leaderboard</a></li>
             </ul>
         </nav>
     </header>
 <body>
+    <section id="about-us">
+    <div class="container">
+        <h2>Welcome To Quick Play Arcade</h2>    
+        <p>Quick Play Arcade (QPArcade) is a fun online platform with a wide range of classic games, offering quick and engaging gaming experiences for all ages. Enjoy a variety of retro classics games with regular updates to keep the fun going. Whether you're a casual gamer or a dedicated enthusiast, QPArcade has something for everyone.</p> 
+    </div>
+    </section>
+
     <!-- Game Thumbnails Section -->
     <section class="game-thumbnails">
 
@@ -43,13 +50,16 @@
         <div class="game-thumbnail">
             <div class="game-card">
                 <h2>Rock Paper Scissors</h2>
+
                 <!-- Game Icon -->
                 <div class="game-icon">
                     <img src="ImgRock\rock-removebg-preview (2).png" alt="Game 1" width="100px" height="100px">
                 </div>
+
                 <!-- Game Description -->
                 <p class="description">Rock, paper, scissors is a decision-making game that relies on random choices of either rock, paper or scissors.</p>
             </div>
+
             <!-- Play Button for Game 1 -->
             <a href="rockpaper.html" class="play-button">Play Now</a>
         </div>
@@ -58,13 +68,16 @@
         <div class="game-thumbnail">
             <div class="game-card">
                 <h2>Hangman</h2>
+
                 <!-- Game Icon -->
                 <div class="game-icon">
                     <img src="ImgRock\hangman-removebg-preview.png" alt="Game 2" width="100px" height="100px">
                 </div>
+
                 <!-- Game Description -->
                 <p class="description">Hangman is a word-guessing game where the player attempts to guess the word by guessing the letters with a limited number of tries.</p>
             </div>
+
             <!-- Play Button for Game 2 -->
             <a href="game2.html" class="play-button">Play Now</a>
         </div>
@@ -73,10 +86,12 @@
         <div class="game-thumbnail">
             <div class="game-card">
                 <h2>Tic Tac Toe</h2>
+
                 <!-- Game Icon -->
                 <div class="game-icon">
                     <img src="ImgRock\tictactoe (2).png" alt="Game 3" width="100px" height="100px">
                 </div>
+
                 <!-- Game Description -->
                 <p class="description">Tic Tac Toe is a classic strategy game where players take turns marking a grid with X's or O's to be the first to achieve a row, column, or diagonal of their symbols.</p>
             </div>
@@ -88,54 +103,22 @@
                 <div class="game-thumbnail">
             <div class="game-card">
                 <h2>Black Jack</h2>
+
                 <!-- Game Icon -->
                 <div class="game-icon">
                     <img src="ImgRock\blackjack-removebg-preview.png" alt="Game 4" width="100px" height="100px">
                 </div>
+
                 <!-- Game Description -->
                 <p class="description">Blackjack is a card game where players aim to beat the dealer by obtaining a hand with a total value as close to 21 as possible without exceeding it.</p>
             </div>
+
             <!-- Play Button for Game 4 -->
             <a href="bj.html" class="play-button">Play Now</a>
         </div>
     </section>
 
-    <!-- Contact us and About Us Section -->
-    <section id="about-us">
-        <div class="container">
-            <h2>About Us                
-            </h2>
-            <p>Quick Play Arcade (QPArcade) is a fun online platform with a wide range of classic games, offering quick and engaging gaming experiences for all ages. Enjoy a variety of retro classics games with regular updates to keep the fun going. Whether you're a casual gamer or a dedicated enthusiast, QPArcade has something for everyone.</p> 
-        </div>
-    </section>
-    <section class="contact-form" id="contact-us">
-        <link rel="stylesheet" type="text/css" href="contact.css">
-        <h1>Contact Us</h1>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <input type="button" value="Submit" onclick="submitForm()">
-        </form>
-    </section>
-
-    <script>
-        function submitForm() {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
-
-            alert("Thank you for your submission!");
-        }
-    </script>
-
-    <!-- Login Form Section -->
+        <!-- Login Form Section -->
     <section class="login-form" id="login">
         <link rel="stylesheet" type="text/css" href="login.css">
         <h2>Login or Sign Up</h2>
@@ -172,8 +155,8 @@
             </thead>
             <tbody>
 
-                <!-- Sample Leaderboard -->
-                <!-- Placeholder-Add more rows for additional leaderboard entries if needed. -->
+                <!-- Leaderboard -->
+                <!-- Placeholder-Add more rows for additional leaderboard rows if needed. -->
                 <tr>
                     <td>1</td>
                     <td>Player 1</td>
