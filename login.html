@@ -7,9 +7,30 @@
 </head>
 <body>
     <header>
-        <div class="heading">
-        </div>
+        <!-- Site Title -->
+        <h1 class="title" id="title">QPArcade</h1>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <!-- Navigation Links -->
+                <li><a href="index.html">Home</a></li>
+                            <li class="dropdown">
+                            <a href="games.html">Games &#9660;</a>
+                    <ul class="dropdown-content">
+                        <!-- Dropdown Game Links -->
+                        <li><a href="rockpaper.html">Rock Paper Scissors</a></li>
+                        <li><a href="game2">Hang Man</a></li>
+                        <li><a href="game3">Tic Tac Toe</a></li>
+                        <li><a href="bj.html">Black Jack</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
     </header>
+<body>
         <!-- Login/Sign-up Form -->
     <section class="login-form">
         <h2>Login or Sign Up</h2>
@@ -29,5 +50,10 @@
             alert("Welcome, " + username + "!");
         }
     </script>
+    <footer>
+        <a class="back-arrow"
+            href="index.html">
+            <img src="ImgRock\homeicon.png" alt="Home Icon"></a>
+    </footer>
 </body>
 </html>

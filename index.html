@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,8 +20,8 @@
             <ul>
                 <!-- Navigation Links -->
                 <li><a href="index.html">Home</a></li>
-                            <li class="dropdown">
-                            <a href="games.html">Games &#9660;</a>
+                <li class="dropdown">
+                    <a href="games.html">Games &#9660;</a>
                     <ul class="dropdown-content">
                         <!-- Dropdown Game Links -->
                         <li><a href="rockpaper.html">Rock Paper Scissors</a></li>
@@ -30,120 +31,90 @@
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#login">Login</a></li>
+                <li><a href="login.html">Login</a></li>
                 <li><a href="leaderboard.html">Leaderboard</a></li>
             </ul>
         </nav>
     </header>
-<body>
+
+    <!-- About Us Section -->
     <section id="about-us">
-    <div class="container">
-        <h2>Welcome To Quick Play Arcade</h2>    
-        <p>Quick Play Arcade (QPArcade) is a fun online platform with a wide range of classic games, offering quick and engaging gaming experiences for all ages. Enjoy a variety of retro classics games with regular updates to keep the fun going. Whether you're a casual gamer or a dedicated enthusiast, QPArcade has something for everyone.</p> 
-    </div>
+        <div class="container">
+            <h2>Welcome To Quick Play Arcade</h2>
+            <p>Quick Play Arcade (QPArcade) is a fun online platform with a wide range of classic games, offering quick and engaging gaming experiences for all ages. Enjoy a variety of retro classics games with regular updates to keep the fun going. Whether you're a casual gamer or a dedicated enthusiast, QPArcade has something for everyone.</p>
+        </div>
     </section>
 
-        <!-- Game Thumbnails Section -->
-    <section class="game-thumbnails">
-
-        <!-- Game 1 -->
-        <div class="game-thumbnail">
-            <div class="game-card">
-                <h2>Rock Paper Scissors</h2>
-
-                <!-- Game Icon -->
-                <div class="game-icon">
-                    <img src="ImgRock\rock-removebg-preview (2).png" alt="Game 1" width="100px" height="100px">
+    <!-- Spinning Boxes Section -->
+    <div class="row">
+        <section class="box-container">
+            <div class="scene">
+                <div class="box">
+                    <div class="face front">
+                        <img src="ImgRock\rock-removebg-preview (2).png" alt="Card Image" width="110px" height="110px">
+                        <h3>Rock Paper Scissors</h3>
+                    </div>
                 </div>
-
-                <!-- Game Description -->
-                <p class="description">Rock, paper, scissors is a decision-making game that relies on random choices of either rock, paper or scissors.</p>
             </div>
-
-            <!-- Play Button for Game 1 -->
             <a href="rockpaper.html" class="play-button">Play Now</a>
-        </div>
-
-        <!-- Game 2 -->
-        <div class="game-thumbnail">
-            <div class="game-card">
-                <h2>Hangman</h2>
-
-                <!-- Game Icon -->
-                <div class="game-icon">
-                    <img src="ImgRock\hangman-removebg-preview.png" alt="Game 2" width="100px" height="100px">
+        </section>
+        <!-- You can repeat the spinning box sections here as needed -->
+            <section class="box-container">
+                <div class="scene">
+                    <div class="box">
+                        <div class="face front">
+                            <img src="ImgRock\hangman-removebg-preview.png" alt="Card Image" width="110px" height="110px">
+                            <h3>Hangman</h3>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Game Description -->
-                <p class="description">Hangman is a word-guessing game where the player attempts to guess the word by guessing the letters with a limited number of tries.</p>
-            </div>
-
-            <!-- Play Button for Game 2 -->
-            <a href="game2.html" class="play-button">Play Now</a>
+                <a href="rockpaper.html" class="play-button">Play Now</a>
+            </section>
+                <section class="box-container">
+                    <div class="scene">
+                        <div class="box">
+                            <div class="face front">
+                                <img src="ImgRock\tictactoe (2).png" alt="Card Image" width="110px" height="110px">
+                                <h3>Tic Tac Toe</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="" class="play-button">Play Now</a>
+                </section>
+                    <section class="box-container">
+                        <div class="scene">
+                            <div class="box">
+                                <div class="face front">
+                                    <img src="ImgRock\blackjack-removebg-preview.png" alt="Card Image" width="110px" height="110px">
+                                    <h3>Black Jack</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="bj.html" class="play-button">Play Now</a>
+                    </section>
+                    </div>
+    <!-- New Section Below Spinning Boxes -->
+    <section class="description-cards">
+        <div class="card">
+            <h2>Rock Paper Scissors</h2>
+            <p>Rock, Paper, Scissors is a classic hand game that's often used to make simple decisions or settle disputes.</p>
+            <img class="puzzle" src="ImgRock\puzzle.png" width="50px" height="50px">
         </div>
-
-        <!-- Game 3 -->
-        <div class="game-thumbnail">
-            <div class="game-card">
-                <h2>Tic Tac Toe</h2>
-
-                <!-- Game Icon -->
-                <div class="game-icon">
-                    <img src="ImgRock\tictactoe (2).png" alt="Game 3" width="100px" height="100px">
-                </div>
-
-                <!-- Game Description -->
-                <p class="description">Tic Tac Toe is a classic strategy game where players take turns marking a grid with X's or O's to be the first to achieve a row, column, or diagonal of their symbols.</p>
-            </div>
-            <!-- Play Button for Game 3 -->
-            <a href="game3.html" class="play-button">Play Now</a>
+        <div class="card">
+            <h2>Hang Man</h2>
+            <p>Hangman is a classic guessing game. A game of word knowledge and strategy that has entertained people of all ages.</p>
+            <img class="puzzle" src="ImgRock\puzzle.png" width="50px" height="50px">
         </div>
-
-        <!-- Game 4 -->
-                <div class="game-thumbnail">
-            <div class="game-card">
-                <h2>Black Jack</h2>
-
-                <!-- Game Icon -->
-                <div class="game-icon">
-                    <img src="ImgRock\blackjack-removebg-preview.png" alt="Game 4" width="100px" height="100px">
-                </div>
-
-                <!-- Game Description -->
-                <p class="description">Blackjack is a card game where players aim to beat the dealer by obtaining a hand with a total value as close to 21 as possible without exceeding it.</p>
-            </div>
-
-            <!-- Play Button for Game 4 -->
-            <a href="bj.html" class="play-button">Play Now</a>
+        <div class="card">
+            <h2>Tic Tac Toe</h2>
+            <p>Tic Tac Toe is a quick and strategic game that's enjoyed by people of all ages and is often used to pass the time.</p>
+            <img class="puzzle" src="ImgRock\puzzle.png" width="50px" height="50px">
+        </div>
+        <div class="card">
+            <h2>Black Jack</h2>
+            <p>A thrilling card game that offers the opportunity for players to test their wits and luck in pursuit of that elusive perfect hand of 21.</p>
+            <img class="puzzle" src="ImgRock\puzzle.png" width="50px" height="50px">
         </div>
     </section>
-
-        <!-- Login Form Section -->
-    <section class="login-form" id="login">
-        <link rel="stylesheet" type="text/css" href="login.css">
-        <h2>Login or Sign Up</h2>
-        <form id="login-form">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-
-            <input type="button" value="Login" onclick="login()">
-        </form>
-        <p>Don't have an account? <a href="#">Sign up here</a></p>
-    </section>
-    <script>
-        function login() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            alert("Welcome, " + username + "!");
-        }
-    </script>
 </body>
-<footer>
-    <div class="links-social" id="social-media">
-        <img src="ImgRock\social_media2.png">
-    </div> 
-</footer>
 </html>

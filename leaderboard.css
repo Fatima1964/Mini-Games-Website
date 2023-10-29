@@ -74,7 +74,7 @@ nav ul li.active a {
     padding: 20px; 
     max-width: 800px; 
     margin: 0 auto; 
-    margin-top: 60px;
+    margin-top: 80px;
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
