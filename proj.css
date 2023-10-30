@@ -186,7 +186,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     width: 200px;
-    text-align: center;
+    text-align: left;
     transition: transform 0.2s;
     margin-top: 130px;
     background-color: #fdd1e0;
