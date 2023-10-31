@@ -5,23 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman Game</title>
     <link rel="stylesheet" href="hangman.css">
-    <!-- Header Section -->
+</head>
+<body>
     <header>
-        <!-- Site Title -->
         <h1 class="title" id="title">QPArcade</h1>
-        <!-- Navigation Menu -->
         <nav>
             <ul>
-                <!-- Navigation Links -->
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="games.html">Games &#9660;</a>
                     <ul class="dropdown-content">
-                        <!-- Dropdown Game Links -->
                         <li><a href="rockpaper.html">Rock Paper Scissors</a></li>
-                        <li><a href="hangman.html">Hang Man</a></li>
-                        <li><a href="game3">Tic Tac Toe</a></li>
-                        <li><a href="bj.html">Black Jack</a></li>
+                        <li><a href="hangman.html">Hangman</a></li>
+                        <li><a href="tictactoe.html">Tic Tac Toe</a></li>
+                        <li><a href="blackjack.html">Blackjack</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
@@ -30,13 +27,12 @@
             </ul>
         </nav>
     </header>
-</head>
-<body>
     <div class="container">
-        <div id="instructions">
+       <div class="instructions-box">
             <h2>Welcome to Hangman Challenge</h2>
             <p>Are you ready to test your word-guessing skills and unravel hidden words? In this thrilling game, you have the chance to prove your word mastery. Here's how it works:</p>
-            
+       
+       
             <h3>How to Play:</h3>
             <ul>
                 <li>Guess the word one letter at a time.</li>
@@ -44,32 +40,27 @@
                 <li>Feeling stuck? Use the "Hint" button for a helpful nudge.</li>
                 <li>Feeling bold? Try the "Guess a Vowel" button for an instant vowel advantage.</li>
             </ul>
-            
             <p>Remember:</p>
             <ul>
                 <li>Hints and vowel guesses are limited, so use them strategically.</li>
                 <li>Victory awaits the word detective who can uncover the hidden secrets!</li>
             </ul>
-            
             <p>Start Guessing!</p>
-        </div>
         
+      </div>
         <div class="game-container">
-          <p id="word-display">Word: _ _ _ _ _</p>
-                <p id="incorrect-guesses">Incorrect Guesses Left: 6</p>
-                <div id="alphabet-buttons">
+            <p id="word-display">Word: _ _ _ _ _</p>
+            <p id="incorrect-guesses">Incorrect Guesses Left: 6</p>
+            <div id="alphabet-buttons">
                <!-- Alphabet buttons will be added here using JavaScript -->
-                </div>
-
-           <button id="hint-button">Hint (3 left)</button>
-          <button id="vowel-button">Guess a Vowel</button>
-        
-        <div class="score-container">
-            <h2>Score</h2>
-            <p>Wins: <span id="wins">0</span></p>
-            <p>Losses: <span id="losses">0</span></p>
-        </div>
-
+            </div>
+            <button id="hint-button">Hint (3 left)</button>
+            <button id="vowel-button">Guess a Vowel</button>
+            <div class="score-container">
+                <h2>Score</h2>
+                <p>Wins: <span id="wins">0</span></p>
+                <p>Losses: <span id="losses">0</span></p>
+            </div>
             <div class="gallows">
                 <div class="beam"></div>
                 <div class="post"></div>
@@ -82,16 +73,12 @@
             <div class="left-leg"></div>
             <div class="right-leg"></div>
         </div>
-      
     </div>
-  
-    <script src="hangman.js"></script> <
-<footer>
-    <a class="back-arrow"
-    href="index.html">
-        <img src="ImgRock\homeicon.png"
-            alt="Home Icon">
-    </a>
-</footer>
+    <footer>
+        <a class="back-arrow" href="index.html">
+            <img src="ImgRock/homeicon.png" alt="Home Icon">
+        </a>
+    </footer>
+    <script src="hangman.js"></script> 
 </body>
 </html>
