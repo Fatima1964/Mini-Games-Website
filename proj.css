@@ -1,4 +1,4 @@
-/* styles for body and ul elements */
+/* body and ul elements */
 body, ul {
     margin: 0;
     padding: 0;
@@ -6,25 +6,25 @@ body, ul {
     box-sizing: border-box;
 }
 
-/* Style the header */
+/* header */
 header {
     align-items: center;
     background-color: #d8b3b3;
     text-align: center;
     font-family:'Segoe';
+    margin: 0;
 }
 
 .title {
-font-size: 36px;
+font-size: 22px;
 margin: 0;
 color: #333;
 }
 
-/* Style the navigation bar */
 nav ul {
     background-color: #9a7575;
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     font-size: 20px;
     vertical-align: top;
 }
@@ -35,23 +35,23 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #f4efef;
+    color: #141010;
     text-align: center;
     padding: 30px;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
 }
 
 nav ul li a:hover {
-    background-color: #765a68;
+    background-color: #b0869a;
     color: #ffff;
 }
 
-/* Style the dropdown menu */
+/* dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
-    font-size: 14px;
+    background-color: #ac9a9a;
+    font-size: 16px;
     z-index: 1;
 }
 
@@ -99,6 +99,7 @@ nav ul li.active a {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     background: #b0788c; 
     margin-bottom: 30px;
+    border-radius: 5px;
 }
 
 .container:hover {
@@ -163,7 +164,7 @@ nav ul li.active a {
     border-radius: 10px;
     font-size: 20px;
     margin-top: 300px; 
-    margin-bottom: 50px;
+
 }
 
 .play-button:hover {
@@ -188,11 +189,33 @@ body {
     width: 200px;
     text-align: center;
     transition: transform 0.2s;
-    margin-top: 130px;
+    margin-top: 120px;
     background-color: #fdd1e0;
     margin-bottom: 50px;
 }
 
 .card:hover {
     transform: scale(1.05);
+}
+
+/*Reponsive*/
+@media (max-width: 768px) {
+    #about-us,
+    .box-container {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+}
+@media (max-width: 768px) {
+    .description-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
 }

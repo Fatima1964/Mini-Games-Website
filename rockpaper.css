@@ -1,4 +1,3 @@
-/* default styles */
 body, ul {
     margin: 0;
     padding: 0;
@@ -6,27 +5,27 @@ body, ul {
     box-sizing: border-box;
 }
 
-/* Style the header */
+/* header */
 header {
     align-items: center;
     background-color: #d8b3b3;
-    color: #090808;
     text-align: center;
     font-family:'Segoe';
-    font-size: 30px;
+    height: max-content;
+    margin: 0 auto;
 }
+
 .title {
-font-size: 36px;
+font-size: 22px;
 margin: 0;
 color: #333;
 }
 
-/* Style the navigation bar */
 nav ul {
     background-color: #9a7575;
     text-align: center;
     padding: 30px;
-    font-size: 20px;
+    font-size: 18px;
     vertical-align: top;
 }
 
@@ -36,35 +35,34 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #f4efef;
+    color: #141010;
     text-align: center;
-    padding: 20px;
-    transition: background-color 0.3s;
-
+    padding: 30px;
+    transition: background-color 0.2s;
 }
 
 nav ul li a:hover {
-    background-color: #765a68;
+    background-color: #b0869a;
     color: #ffff;
-
 }
 
-/* Style the dropdown menu */
+/* dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
-    font-size: 14px;
+    background-color: #ac9a9a;
+    font-size: 16px;
     z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Highlight the selected tab */
 nav ul li.active a {
     font-weight: bold;
 }
+
 
 .game-container {
     background: linear-gradient(45deg, #cbc2f6, #f68176);
@@ -80,6 +78,7 @@ nav ul li.active a {
     margin: 10px auto;
     width: 800px;
     height: 125px;
+
 }
 
 .game-container2{
@@ -97,6 +96,7 @@ nav ul li.active a {
         margin: auto;
         width: 800px;
         Height: 850px;
+        padding: 40px;
 }
 
 .game-description {
@@ -187,7 +187,7 @@ table tr:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 h1 {
@@ -273,7 +273,7 @@ h1 {
     border: none;
     border-radius: 10px;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     width:100%;
     height:50px;
     cursor: pointer;
@@ -290,6 +290,15 @@ h1 {
     padding-top: 20px;
 }
 
+.back-arrow {
+    left: 500px;
+}
+
+.icon {
+    margin-top: 10px;
+}
+
+
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens here */
     .game-container,
@@ -299,17 +308,4 @@ h1 {
         margin: 10px auto;
     }
 
-    .back-arrow {
-        left: 10px;
-    }
-
-    .icon {
-        margin: 10px;
-    }
 }
-
-
-
-
-
-

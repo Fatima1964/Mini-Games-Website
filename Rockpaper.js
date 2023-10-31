@@ -32,13 +32,13 @@ function playRound(playerSelection) {
             computerScore++;
         }
 
-        roundCount++; // Increment the round count.
+        roundCount++; // Increase the round count.
 
         displayRoundResult(roundCount, resultMessage, playerScore, computerScore); // Display the result.
 
         if (roundCount === 5) { // Check if it's the final round.
             updateFinalScore(); // Update the final scores.
-            document.getElementById("exit-button").style.display = "block"; // Display the exit button.
+            document.getElementById("exit-button").style.display = "block"; 
         }
     }
 }

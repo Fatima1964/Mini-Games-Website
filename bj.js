@@ -11,6 +11,7 @@ function add(userInput, sum, randNum) {
   return sum;
 }
 
+
 // Event listeners for number buttons
 document.querySelectorAll('.numberbutton').forEach(button => {
   button.addEventListener('click', function () {
@@ -27,20 +28,20 @@ document.querySelectorAll('.numberbutton').forEach(button => {
     sum = add(selectedNumber, sum, randNum);
     usersum = usersum + selectedNumber;
     rndsum = rndsum + randNum;
-
+    document.getElementById('result').textContent += `\nThe current running total is: ${rndsum}`;
     if (sum === 21) {
-      document.getElementById('result').textContent += `\nCongratulations! You won!`;
+      document.getElementById('result').textContent += `\nEnd of the Game!\n\nCongratulations! You won!`;      
     } else if (sum > 21) {
-      document.getElementById('result').textContent += `\nSorry, you lost the game :(.`;
+      document.getElementById('result').textContent += `\nEnd of the Game!\n\nSorry, you lost the game :(. Better luck next time!`;
     } else {
       document.getElementById('result').textContent += '\nYou are still under 21. Keep Playing!';
     }
 
     if (sum === 21 || sum > 21) {
       // Display the final scores and reset the game
-      document.getElementById('result').textContent += `\nThe Final Score is:  ${sum}`
-      document.getElementById('result').textContent += `\nYour total Score is:  ${usersum}`
-      document.getElementById('result').textContent += `\nDealer's total Score is:  ${rndsum}`
+      document.getElementById('result').textContent += `\nThe Game Total is:  ${sum}`
+      document.getElementById('result').textContent += `\nYour Final Score is:  ${usersum}`
+      document.getElementById('result').textContent += `\nDealer's Final Score is:  ${rndsum}`
       document.getElementById('replayButton').style.display = 'block';
       sum = 0;
       rndsum = 0;

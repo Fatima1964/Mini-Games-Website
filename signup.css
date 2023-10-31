@@ -1,0 +1,62 @@
+.signup-form {
+    background: linear-gradient(to bottom, #f9f7f6, #f1eaf6);
+    padding: 60px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-style: double;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-align: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.signup-form:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.signup-form h1 {
+    font-size: 32px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.signup-form form {
+    text-align: left;
+}
+
+.signup-form label {
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"] {
+    width: 95%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.signup-form input[type="submit"] {
+    background: linear-gradient(to bottom, #aa88e0, #9434bd);
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 97%;
+    font-size: 16px;
+    transition: transform 0.3s;
+    margin-top: 30px;
+}
+
+.signup-form input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #9434bd, #aa88e0);
+    transform: scale(1.05);
+}

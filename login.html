@@ -27,28 +27,56 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href=#signup-form>Signup</a></li>
             </ul>
         </nav>
     </header>
 <body>
         <!-- Login/Sign-up Form -->
     <section class="login-form">
-        <h2>Login or Sign Up</h2>
+        <h2>Log In</h2>
         <form id="login-form">
-            <label for="username">Username:</label>
+            <label for="username">*Username:</label>
             <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
+            <label for="password">*Password:</label>
             <input type="password" id="password" name="password" required>
             <input type="button" value="Login" onclick="login()">
         </form>
-        <p>Don't have an account? <a href="#">Sign up here</a></p>
+        <p>Don't have an account? <a href="#signup-form">Sign up here</a></p>
+    </section>
+    <section>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <div class="signup-form">
+        <h1>Sign Up</h1>
+                <form action="your_server_endpoint.php" method="POST">
+            <label for="username">*Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">*Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">*Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirm_password">*Confirm Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
     </section>
     <script>
         function login() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            alert("Welcome, " + username + "!");
-        }
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var alphabetPattern = /^[A-Za-z]+$/;
+    
+    if (!alphabetPattern.test(username)) {
+        alert("Please enter a valid username with alphabet letters only.");
+        return;
+    }
+        alert("Welcome, " + username + "!");
+}
     </script>
     <footer>
         <a class="back-arrow"

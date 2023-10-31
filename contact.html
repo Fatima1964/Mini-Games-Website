@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html> 
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QPArcade</title>
     <link rel="stylesheet" type="text/css" href="contact.css">
-  
 </head>
+
 <header>
     <h1 class="title" id="title">QPArcade</h1>
     <nav>
@@ -28,55 +29,83 @@
             <li><a href="index.html">Login</a></li>
             <li><a href="leaderboard.html">Leaderboard</a></li>
         </ul>
+    </nav>
 </header>
 
-    <!-- Contact us and About Us Section -->
-    <section id="about-us">
-        <div class="container">
-            <h2>About Us                
-            </h2>
-            <p>"🚀 Welcome to the galactic universe of Team 19 Coders! 🌌
-                We're not your ordinary bunch of code devotees; we're the dynamic dorks of the digital world. 🤓💻
-                Our mission? To turn coffee into code, one caffeine-fueled line at a time. ☕️➡️💾
-                So, if you're wondering what the '19' stands for, it's the number of browser tabs we have open right now! 😅📂.</p> 
-        </div>
-        </section>
-    <section class="contact-form">
-        <h1>Contact Us</h1>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+<!-- Contact us and About Us Section -->
+<section id="about-us">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>🚀 Welcome to the galactic universe of Team 19 Coders! 🌌 We're not your ordinary bunch of code devotees; we're the dynamic dorks of the digital world. 🤓💻 Our mission? 
+            Together, we've embarked on an incredible journey to create QPArcade, where fun and innovation collide. Our diverse team of tech enthusiasts has poured their passion and creativity into every pixel and line of code, making this digital playground a reality. 🕹️🎮
+            So, if you're wondering what the '19' stands for, it's the number of browser tabs we have open right now! 😅📂."</p>
+    </div>
+</section>
+<section class="contact-form">
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+        <label for="name">*Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">*Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+        <label class="reason-label" for="reason" onclick="toggleReasonDropdown()">*Reason: </label>
 
-            <input type="button" value="Submit" onclick="submitForm()">
-        </form>
-    </section>
+        <select id="reason" name="reason" required hidden>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Technical Support">Technical Support</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Other">Other</option>
+        </select>
 
-    <script>
-        function submitForm() {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var message = document.getElementById("message").value;
+        <label for="message">*Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="button" value="Submit" onclick="submitForm()">
+    </form>
+</section>
 
-            alert("Thank you for your submission!");
+<script>
+    function toggleReasonDropdown() {
+        var reasonDropdown = document.getElementById("reason");
+        if (reasonDropdown.style.display === "none") {
+            reasonDropdown.style.display = "block";
+        } else {
+            reasonDropdown.style.display = "none";
         }
-    </script>
+    }
+
+    function submitForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if (!name || !email || !message) {
+            alert("Please fill in all required fields.");
+            return;
+        }
+
+        // Email format with a regular expression//
+        var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+        if (!emailPattern.test(email)) {
+            alert("Please enter a valid email address.");
+            return;
+        }
+
+        var messageLength = message.length;
+        if (messageLength < 10) {
+            alert("Please enter a longer message (at least 10 characters).");
+            return;
+        }
+
+        var submissionMessage = "Thank you, " + name + "! Your message has been received. We value your submission.";
+        alert(submissionMessage);
+    }
+</script>
 </body>
 <footer>
-    <a class="back-arrow"
-        href="index.html">
-        <img src="ImgRock\homeicon.png"
-            alt="Home Icon"></a>
+    <a class="back-arrow" href="index.html">
+        <img src="ImgRock\homeicon.png" alt="Home Icon">
+    </a>
 </footer>
 </html>
-
-
-
-
-
-
