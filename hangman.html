@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></strong>Hangman Game</title>
+  <link rel="stylesheet" href="hangman.css">
+   
+  </head>
+<body>
+    <header>
+            <h1 class="title" id="title">QPArcade</h1>
+
+    </header>
+    <nav>
+         <ul>
+                <!-- Navigation Links -->
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="games.html">Games &#9660;</a>
+                    <ul class="dropdown-content">
+                        <!-- Dropdown Game Links -->
+                        <li><a href="rockpaper.html">Rock Paper Scissors</a></li>
+                        <li><a href="game2">Hang Man</a></li>
+                        <li><a href="game3">Tic Tac Toe</a></li>
+                        <li><a href="game4">Black Jack</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+        </nav>
+        <div class="game-container">
+            <h1> Hangman</h1>
+            <h2>Instructions</h2>
+            <p>Welcome to the Hangman Challenge, where words tremble in fear and letters hang by a thread!</p>
+            <p>Your mission, should you choose to accept it, is to guess the hidden word letter by letter.</p>
+            <p>But fear not, we've got some tricks up our sleeves to make your adventure even more exciting:</p>
+            <ul>
+                <li>Use the <strong>"Hint" button</strong> if you're feeling stuck. It's like having a secret agent whispering a letter in your ear!</li>
+                <li>Or if you're feeling bold, try the <strong>"Guess a Vowel" button</strong> – it's your instant ticket to a vowel jackpot!</li>
+                <li>But beware, you only have a few hints and vowel guesses, so use them wisely.</li>
+            </ul>
+            <p>Can you unravel the word and emerge victorious? Put on your detective hat and start guessing!</p>
+        </div>
+        
+    <div class="game-container">
+        <div id="word-display"></div>
+        <div id="alphabet">
+    </div>
+        <div id="guess-count">
+            Incorrect Guesses: <span id="incorrect-guesses">0</span>/6
+        </div>
+    </div>
+    <button id="hint-button">Hint (3 left)</button>
+    <button id="vowel-button">Guess a Vowel</button>
+    
+    <div class="score-container">
+        <h2>Score</h2>
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+    </div>
+
+    <script src="hangman.js"></script>
+  <footer>
+            <a class="back-arrow"
+                href="index.html">
+                <img src="ImgRock\homeicon.png"
+                    alt="Home Icon">
+            </a>
+    </footer>
+</body>
+</html>
