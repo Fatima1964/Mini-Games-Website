@@ -45,10 +45,17 @@
     </section>
     <script>
         function login() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            alert("Welcome, " + username + "!");
-        }
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    var alphabetPattern = /^[A-Za-z]+$/;
+    
+    if (!alphabetPattern.test(username)) {
+        alert("Please enter a valid username with alphabet letters only.");
+        return;
+    }
+        alert("Welcome, " + username + "!");
+}
+
     </script>
     <footer>
         <a class="back-arrow"
