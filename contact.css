@@ -5,7 +5,7 @@ body, ul {
     box-sizing: border-box;
 }
 
-/* Style the header */
+/* header */
 header {
     align-items: center;
     background-color: #d8b3b3;
@@ -20,7 +20,7 @@ margin: 0;
 color: #333;
 }
 
-/* Style the navigation bar */
+/* navigation bar */
 nav ul {
     background-color: #9a7575;
     text-align: center;
@@ -48,7 +48,7 @@ nav ul li a:hover {
 
 }
 
-/* Style the dropdown menu */
+/* dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -60,7 +60,6 @@ nav ul li a:hover {
     display: block;
 }
 
-/* Highlight the selected tab */
 nav ul li.active a {
     font-weight: bold;
 }
@@ -211,7 +210,7 @@ nav ul li.active a {
     cursor:pointer;
 }
 
-/* Style the label and select to be on the same line */
+
 .reason-container:hover  {
     display: block;
     align-items: center;
@@ -219,13 +218,12 @@ nav ul li.active a {
     margin-bottom: 30px;
 }
 
-/* Add some spacing between label and select */
 .reason-label, #reason {
     margin-right: 20px;
 }
-
+/*reponsive */
 @media (max-width: 768px) {
-    /* Adjust styles for smaller screens here */
+
     #about-us {
         padding: 20px;
         border-radius: 0;

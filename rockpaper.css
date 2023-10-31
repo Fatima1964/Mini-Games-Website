@@ -290,6 +290,15 @@ h1 {
     padding-top: 20px;
 }
 
+.back-arrow {
+    left: 500px;
+}
+
+.icon {
+    margin-top: 10px;
+}
+
+
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens here */
     .game-container,
@@ -299,17 +308,4 @@ h1 {
         margin: 10px auto;
     }
 
-    .back-arrow {
-        left: 10px;
-    }
-
-    .icon {
-        margin-top: 10px;
-    }
 }
-
-
-
-
-
-

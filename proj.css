@@ -24,8 +24,8 @@ color: #333;
 nav ul {
     background-color: #9a7575;
     text-align: center;
-    padding: 30px;
-    font-size: 18px;
+    padding: 40px;
+    font-size: 20px;
     vertical-align: top;
 }
 
@@ -99,6 +99,7 @@ nav ul li.active a {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     background: #b0788c; 
     margin-bottom: 30px;
+    border-radius: 5px;
 }
 
 .container:hover {
@@ -195,4 +196,26 @@ body {
 
 .card:hover {
     transform: scale(1.05);
+}
+
+/*Reponsive*/
+@media (max-width: 768px) {
+    #about-us,
+    .box-container {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+}
+@media (max-width: 768px) {
+    .description-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
 }

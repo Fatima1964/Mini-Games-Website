@@ -42,12 +42,12 @@ body {
     background: rgb(247, 244, 247);
 }
 
-.front  { transform: translateZ(30px); } /* Adjust translateZ value */
-.back   { transform: rotateY(180deg) translateZ(30px); } /* Adjust translateZ value */
-.right  { transform: rotateY(90deg) translateZ(30px); } /* Adjust translateZ value */
-.left   { transform: rotateY(-90deg) translateZ(30px); } /* Adjust translateZ value */
-.top    { transform: rotateX(90deg) translateZ(30px); } /* Adjust translateZ value */
-.bottom { transform: rotateX(-90deg) translateZ(30px); } /* Adjust translateZ value */
+.front  { transform: translateZ(30px); } 
+.back   { transform: rotateY(180deg) translateZ(30px); } 
+.right  { transform: rotateY(90deg) translateZ(30px); } 
+.left   { transform: rotateY(-90deg) translateZ(30px); } 
+.top    { transform: rotateX(90deg) translateZ(30px); } 
+.bottom { transform: rotateX(-90deg) translateZ(30px); } 
 
 .face img {
     width: 100%;

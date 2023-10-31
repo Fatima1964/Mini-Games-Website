@@ -5,7 +5,7 @@ body, ul {
     box-sizing: border-box;
 }
 
-/* Style the header */
+/* header */
 header {
     align-items: center;
     background-color: #d8b3b3;
@@ -19,7 +19,7 @@ margin: 0;
 color: #333;
 }
 
-/* Style the navigation bar */
+/* navigation bar */
 nav ul {
     background-color: #9a7575;
     text-align: center;
@@ -47,7 +47,7 @@ nav ul li a:hover {
 
 }
 
-/* Style the dropdown menu */
+/* dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -68,7 +68,7 @@ nav ul li.active a {
 .login-form {
     background: linear-gradient(to bottom, #f9f7f6, #f1eaf6); 
     padding: 40px; 
-    max-width: 800px; 
+    max-width: 500px; 
     margin: 0 auto; 
     border-style: double;
     border-radius: 15px; 
@@ -152,4 +152,14 @@ nav ul li.active a {
 
 .back-arrow:hover img {
     opacity: 0.7; 
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+    .login-form {
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
 }
