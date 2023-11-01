@@ -53,27 +53,14 @@
             <p id="incorrect-guesses">Incorrect Guesses Left: 6</p>
             <div id="alphabet-buttons">
                <!-- Alphabet buttons will be added here using JavaScript -->
-            </div>
-            <button id="hint-button">Hint (3 left)</button>
-            <button id="vowel-button">Guess a Vowel</button>
+               </div>
+             <button id="hint-button" onclick="revealHint()">Hint (3 left)</button>
+                 <button id="vowel-button" onclick="revealVowel()">Guess a Vowel (5 left)</button>
             <div class="score-container">
                 <h2>Score</h2>
                 <p>Wins: <span id="wins">0</span></p>
                 <p>Losses: <span id="losses">0</span></p>
             </div>
-            <div class="gallows">
-                <div class="beam"></div>
-                <div class="post"></div>
-                <div class="rope"></div>
-            </div>
-            <div class="head"></div>
-            <div class="body"></div>
-            <div class="left-arm"></div>
-            <div class="right-arm"></div>
-            <div class="left-leg"></div>
-            <div class="right-leg"></div>
-        </div>
-    </div>
     <footer>
         <a class="back-arrow" href="index.html">
             <img src="ImgRock/homeicon.png" alt="Home Icon">
