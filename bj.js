@@ -29,6 +29,7 @@ document.querySelectorAll('.numberbutton').forEach(button => {
     usersum = usersum + selectedNumber;
     rndsum = rndsum + randNum;
     document.getElementById('result').textContent += `\nThe current running total is: ${rndsum}`;
+   
     if (sum === 21) {
       document.getElementById('result').textContent += `\nEnd of the Game!\n\nCongratulations! You won!`;      
     } else if (sum > 21) {
@@ -39,13 +40,13 @@ document.querySelectorAll('.numberbutton').forEach(button => {
 
     if (sum === 21 || sum > 21) {
       // Display the final scores and reset the game
-      document.getElementById('result').textContent += `\nThe Game Total is:  ${sum}`
-      document.getElementById('result').textContent += `\nYour Final Score is:  ${usersum}`
-      document.getElementById('result').textContent += `\nDealer's Final Score is:  ${rndsum}`
-      document.getElementById('replayButton').style.display = 'block';
-      sum = 0;
-      rndsum = 0;
-      usersum = 0;
+        document.getElementById('result').textContent += `\nThe Game Total is:  ${sum}`
+        document.getElementById('result').textContent += `\nYour Final Score is:  ${usersum}`
+        document.getElementById('result').textContent += `\nDealer's Final Score is:  ${rndsum}`
+        document.getElementById('replayButton').style.display = 'block';
+        sum = 0;
+        rndsum = 0;
+        usersum = 0;
     }
   });
 });
