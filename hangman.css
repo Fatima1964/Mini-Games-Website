@@ -1,0 +1,310 @@
+/* styles for body and ul elements */
+body, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  align-items: center;
+  background-color: #d8b3b3;
+  text-align: center;
+  font-family:'Segoe';
+}
+
+.title {
+font-size: 36px;
+margin: 0;
+color: #333;
+}
+
+/* Style the navigation bar */
+nav ul {
+  background-color: #9a7575;
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  vertical-align: top;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f4efef;
+  text-align: center;
+  padding: 30px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #765a68;
+  color: #ffff;
+}
+
+/* Style the dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  font-size: 14px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav ul li.active a {
+  font-weight: bold;
+}
+
+#about-us {
+  position: flex;
+  border-style: double;
+  background: linear-gradient(to bottom, #f9f7f6, #f1eaf6);
+  padding: 40px;
+  text-align: center;
+  max-width: 800px;
+  max-height: 600px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+#about-us h2 {
+  font-size: 32px;
+  color: #120c0c; 
+  margin-bottom: 20px;
+}
+
+#about-us p {
+  font-size: 18px;
+  color: #0e0c0c; 
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  transition: transform 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  background: #b0788c; 
+  margin-bottom: 30px;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container {
+  width: 250px;
+  height: 250px;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  animation: spin 10s infinite linear;
+}
+
+.face {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: rgba(179, 144, 170, 0.9);
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  color: rgb(17, 9, 9);
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.front { transform: rotateY(0deg); }
+
+/* Spin */
+@keyframes spin {
+  0% { transform: rotateX(0deg) rotateY(0deg); }
+  100% { transform: rotateX(0deg) rotateY(360deg); }
+}
+
+.play-button {
+  position: absolute;
+  background-color: #8e6767;
+  color: #fff;
+  padding: 15px 20px;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-top: 300px; 
+  margin-bottom: 50px;
+}
+
+.play-button:hover {
+  background-color: #f37777;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.description-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  border: 2px double #333;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.2s;
+  margin-top: 130px;
+  background-color: #fdd1e0;
+  margin-bottom: 50px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Global Styles */
+body {
+  background-color: #d8b3b3;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+/* Game Container */
+.container {
+  background-color: #b0788c;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+/* Reset default margin and padding for the list elements */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  background-color: #d8b3b3;
+}
+
+.sidebar {
+  width: 25%;
+  background-color: #b0788c;
+}
+
+.sidebar ul {
+  padding: 20px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  margin: 10px 0;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Add more styles for your content as needed */
+
+
+/* Hangman Graphic */
+.hangman {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Word Display */
+#word-display {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Alphabet Buttons */
+#alphabet-buttons {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #8e6767;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b0869a;
+}
+
+/* Game Over Message */
+#game-over-message {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Reset Button */
+#reset-button {
+  background-color: #8e6767;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reset-button:hover {
+  background-color: #b0869a;
+}
