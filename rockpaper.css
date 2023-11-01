@@ -297,6 +297,10 @@ h1 {
 .icon {
     margin-top: 10px;
 }
+body{
+    background-color: #d8b3b3;
+    color: #333;
+}
 
 
 @media (max-width: 768px) {
