@@ -1,5 +1,5 @@
 // List of words to choose from
-const wordList = ["shahrukh khan", "canada", "kuwait", "programmer"];
+const wordList = ["mango", "school", "quiz", "zootopia", "holiday", "teacher", "cricket", "canada", "kuwait", "programmer"];
 
 // Initialize a game and scoreboard
 let game = initializeGame();
@@ -133,5 +133,6 @@ hintButton.addEventListener('click', revealHint);
 
 const vowelButton = document.getElementById('vowel-button');
 vowelButton.addEventListener('click', revealVowel);
+
 
 initializeGame();
