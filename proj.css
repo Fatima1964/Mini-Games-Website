@@ -12,7 +12,8 @@ header {
     background-color: #d8b3b3;
     text-align: center;
     font-family:'Segoe';
-    margin: 0;
+    height: max-content;
+    margin: 0 auto;
 }
 
 .title {
@@ -24,8 +25,8 @@ color: #333;
 nav ul {
     background-color: #9a7575;
     text-align: center;
-    padding: 40px;
-    font-size: 20px;
+    padding: 30px;
+    font-size: 18px;
     vertical-align: top;
 }
 
@@ -62,6 +63,7 @@ nav ul li a:hover {
 nav ul li.active a {
     font-weight: bold;
 }
+
 
 #welcome {
     position: flex;
