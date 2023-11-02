@@ -76,9 +76,13 @@
     }
 
     function submitForm() {
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
+        var nameId = document.getElementById("name");
+        var emailId = document.getElementById("email");
+        var messageId = document.getElementById("message");
+
+        var name = nameId.value;
+        var email = emailId.value;
+        var message = messageId.value;
 
         if (!name || !email || !message) {
             alert("Please fill in all required fields.");
@@ -100,6 +104,11 @@
 
         var submissionMessage = "Thank you, " + name + "! Your message has been received. We value your submission.";
         alert(submissionMessage);
+
+        //After Submission received message, clearing the form fields.
+        nameId.value = "";
+        emailId.value = "";
+        messageId.value = "";
     }
 </script>
 </body>
