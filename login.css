@@ -157,7 +157,7 @@ nav ul li.active a {
 /*Responsive*/
 @media (max-width: 768px) {
     .login-form {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin: 10px auto;
     }
