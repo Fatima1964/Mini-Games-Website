@@ -23,7 +23,7 @@
                         <!-- Dropdown Game Links -->
                         <li><a href="rockpaper.html">RockPaperScissors</a></li>
                         <li><a href="hangman.html">Hangman</a></li>
-                        <li><a href="game3">TicTacToe</a></li>
+                        <li><a href="tictactoe.html">TicTacToe</a></li>
                         <li><a href="bj.html">BlackJack</a></li>
                     </ul>
                 </li>
@@ -37,11 +37,17 @@
 <body>
     <div class="game-container">
         <h2 class="Title">Rules</h2>
+        <img class="image" src="ImgRock\rockpaperback.png" width="90px" height="75px">
         <div class="game-description">
-            <p>Rock beats Scissors (Rock wins).
-                Scissors beat Paper (Scissors wins).
-                Paper beats Rock (Paper wins).
-                If both players choose the same shape, it's a tie, and no one gets the point.
+            <p>Objective: The objective of Rock, Paper, Scissors is to defeat your opponent by choosing an element that can defeat their chosen element.
+                Elements:
+                Rock: represented by a closed fist.
+                Paper: represented by an open hand.
+                Scissors: represented by a fist with the index and middle fingers extended, forming a V.
+                Rules:
+                Rock beats Scissors: Rock crushes Scissors.
+                Scissors beat Paper: Scissors cut Paper.
+                Paper beats Rock: Paper covers Rock.
             </p>
         </div>
     </div>
@@ -66,7 +72,7 @@
                 <div class="choice-icons">
                     <div class="icon" id="question">
                         <img
-                            src="ImgRock\questionmark.png"
+                            src="ImgRock\computer.png"
                             alt="Question">
                     </div>
                 </div>
@@ -117,25 +123,22 @@
         });
     </script>
     <script>
-        // Define the restartGame function
+        // Defines the restartGame function
         function restartGame() {
             roundCount = 0;
             playerScore = 0;
             computerScore = 0;
             updateFinalScore(); // Clear the final score display
             clearScoreboard(); // Clear the scoreboard
-            document.getElementById("round-result").textContent = ""; // Clear the round result message
+            document.getElementById("round-result").textContent = ""; // Clears the round result message//
             
         }
-    
-        // Set up an event listener for the restart button
-        document.getElementById("clear-button").addEventListener("click", restartGame);
+            document.getElementById("clear-button").addEventListener("click", restartGame);
     </script>
     
 <footer>
-    <a class="back-arrow"
-        href="index.html">
-        <img src="ImgRock\homeicon.png" alt="Home Icon"></a>
+    <a class="back-arrow" href="index.html">
+    <img src="ImgRock\homeicon.png" alt="Home Icon"></a>
 </footer>
 </body>
 </html>
