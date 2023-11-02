@@ -63,7 +63,7 @@ nav ul li.active a {
     font-weight: bold;
 }
 
-#about-us {
+#welcome {
     position: flex;
     border-style: double;
     background: linear-gradient(to bottom, #f9f7f6, #f1eaf6);
@@ -78,13 +78,13 @@ nav ul li.active a {
     margin-bottom: 80px;
 }
 
-#about-us h2 {
+#welcome h2 {
     font-size: 32px;
     color: #120c0c; 
     margin-bottom: 20px;
 }
 
-#about-us p {
+#welcome p {
     font-size: 18px;
     color: #0e0c0c; 
     line-height: 1.6;
@@ -202,9 +202,8 @@ body {
 
 /*Reponsive*/
 @media (max-width: 768px) {
-    #about-us,
     .box-container {
-        width: 100%;
+        width: 25%;
         height: auto;
         margin: 10px auto;
     }
@@ -217,7 +216,25 @@ body {
     }
 
     .card {
-        width: 100%;
+        width: 50%;
         margin: 10px 0;
     }
+    .play-button {
+        position: absolute;
+        background-color: #8e6767;
+        color: #fff;
+        padding: 15px 20px;
+        text-decoration: none;
+        text-align: center;
+        margin-left: 60px;
+        border-radius: 10px;
+        font-size: 20px;
+        margin-top: 300px; 
+    
+    }
+    
+    .play-button:hover {
+        background-color: #f37777;
+    }
+    
 }

@@ -307,7 +307,7 @@ body{
     /* Adjust styles for smaller screens here */
     .game-container,
     .game-container2 {
-        width: 100%;
+        width:25%;
         height: auto;
         margin: 10px auto;
     }

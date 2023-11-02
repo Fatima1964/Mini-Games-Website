@@ -135,7 +135,7 @@ tr:hover {
 /*Responsive*/
 @media (max-width: 768px) {
     .leaderboard, table {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin: 10px auto;
     }

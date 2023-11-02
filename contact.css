@@ -56,6 +56,7 @@ nav ul li a:hover {
     font-size: 14px;
     z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -112,6 +113,7 @@ nav ul li.active a {
     transition: transform 0.3s;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
+
 .container:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
