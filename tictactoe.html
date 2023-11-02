@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Metadata -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Page Title -->
+        <title>QPArcade</title>
+        <!-- Link to External CSS -->
+        <link rel="stylesheet" type="text/css" href="proj.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <!-- Site Title -->
+            <h1 class="title" id="title">QPArcade</h1>
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <!-- Navigation Links -->
+                    <iframe src="logo.html" width="100px" height="100px" style="border:none;"></iframe>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="games.html">Games &#9660;</a>
+                        <ul class="dropdown-content">
+                            <!-- Dropdown Game Links -->
+                            <li><a href="rockpaper.html">Rock Paper Scissors</a></li>
+                            <li><a href="hangman.html">Hang Man</a></li>
+                            <li><a href="tictactoe.html">Tic Tac Toe</a></li>
+                            <li><a href="bj.html">Black Jack</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="leaderboard.html">Leaderboard</a></li>
+                    </ul>
+                    
+                </ul>
+            </nav>
+        </header>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictactoe.css">
+    <script src="tictactoe.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
+</body>   
+</html>
