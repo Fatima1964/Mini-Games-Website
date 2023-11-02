@@ -12,7 +12,7 @@ function add(userInput, sum, randNum) {
 }
 
 function setNumberButtonsState(enabled){
-  document.querrySelectorAll(`.numberbutton`).forEach(button => {
+  document.querySelectorAll(`.numberbutton`).forEach(button => {
     button.disabled = !enabled;
   })
 }
@@ -38,9 +38,9 @@ document.querySelectorAll('.numberbutton').forEach(button => {
       document.getElementById('result').textContent += `\nThe current running total is: ${rndsum}`;
    
       if (sum === 21) {
-        document.getElementById('result').textContent += `\nEnd of the Game!\n\nCongratulations! You won!`;      
+        document.getElementById('result').textContent += `\nEnd of the Game!\n\nCongratulations! You won! 🏆😊`;             
       } else if (sum > 21) {
-        document.getElementById('result').textContent += `\nEnd of the Game!\n\nSorry, you lost the game :(. Better luck next time!`;
+        document.getElementById('result').textContent += `\nEnd of the Game!\n\nSorry, you lost the game💔😢. Better luck next time!`;        
       } else {
         document.getElementById('result').textContent += '\nYou are still under 21. Keep Playing!';
       }
