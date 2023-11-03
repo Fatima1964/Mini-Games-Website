@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Metadata -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Page Title -->
-        <title>QPArcade</title>
-        <!-- Link to External CSS -->
-        <link rel="stylesheet" type="text/css" href="proj.css">
-    </head>
-    <body>
-        <!-- Header Section -->
-        <header>
-            <!-- Site Title -->
-            <h1 class="title" id="title">QPArcade</h1>
-            <!-- Navigation Menu -->
-            <nav>
-                <ul>
-                    <!-- Navigation Links -->
-                    <iframe src="logo.html" width="100px" height="100px" style="border:none;"></iframe>
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="games.html">Games &#9660;</a>
-                        <ul class="dropdown-content">
-                            <!-- Dropdown Game Links -->
-                            <li><a href="rockpaper.html">Rock Paper Scissors</a></li>
-                            <li><a href="hangman.html">Hang Man</a></li>
-                            <li><a href="tictactoe.html">Tic Tac Toe</a></li>
-                            <li><a href="bj.html">Black Jack</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="leaderboard.html">Leaderboard</a></li>
-                    </ul>
-                    
-                </ul>
-            </nav>
-        </header>
-        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
     <link rel="stylesheet" href="tictactoe.css">
-    <script src="tictactoe.js" defer></script>
-    <title>Tic Tac Toe</title>
 </head>
-<body>
-    <div class="board" id="board">
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
-        <div class="cell" data-cell></div>
+    <header>
+        <!-- Site Title and Navigation Menu -->
+        <h1 class="title" id="title">QPArcade</h1>
+        <nav>
+            <ul>
+                <iframe src="logo.html" width="100px" height="100px" style="border:none;"></iframe>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="games.html">Games &#9660;</a>
+                    <ul class="dropdown-content">
+                        <!-- Dropdown Game Links -->
+                        <li><a href="rockpaper.html">Rock Paper Scissors</a></li>
+                        <li><a href="hangman.html">Hang Man</a></li>
+                        <li><a href="tictactoe.html">Tic Tac Toe</a></li>
+                        <li><a href="bj.html">Black Jack</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <div class="container">
+        <h2 class="game-title">Tic Tac Toe Game</h2>
+        <section class="game-board" id="gamegrid">
+                <div class="board" id="board">
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                    <div class="cell" data-cell></div>
+                </div>
+                <div class="winning-message" id="winningMessage">
+                    <div data-winning-message-text></div>
+                    <button id="restartButton">Restart</button>
+                </div>
+            </section>
+            <section class="game-instructions">
+                <h2>How to Play</h2>
+                <p>Welcome to the exciting world of Tic Tac Toe!</p>
+                <p>This classic game is simple and fun. Here's how to play:</p>
+                <ol>
+                    <li>Two players take turns marking a square with their symbol (X or O).</li>
+                    <li>The first player to get three of their symbols in a row (horizontally, vertically, or diagonally) wins the game.</li>
+                    <li>If all squares are filled and no player has three in a row, the game is a draw.</li>
+                </ol>
+                <p>Are you ready to challenge your opponent and become the Tic Tac Toe champion?</p>
+            </section>
+        </main>
     </div>
-    <div class="winning-message" id="winningMessage">
-        <div data-winning-message-text></div>
-        <button id="restartButton">Restart</button>
-    </div>
-</body>   
+    <script src="tictactoe.js" defer></script>
+</div>
+</body>
 </html>
