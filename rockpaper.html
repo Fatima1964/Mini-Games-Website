@@ -108,39 +108,18 @@
                 </div>
         </div>
     </div>
-
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const scoreboardBody = document.getElementById("scoreboard-body");
+        document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById("clear-button").addEventListener("click", restartGame);
 
-            function clearScoreboard() {
-                while (scoreboardBody.firstChild) {
-                    scoreboardBody.removeChild(scoreboardBody.firstChild);
-                }
-            }
+    // Initialize the game
+    updateFinalScore();
+});
 
-            // Event listener for the clear button
-            const clearButton = document.getElementById("clear-button");
-            clearButton.addEventListener("click", clearScoreboard);
-        });
-    </script>
-    <script>
-        // Defines the restartGame function
-        function restartGame() {
-            roundCount = 0;
-            playerScore = 0;
-            computerScore = 0;
-            updateFinalScore(); // Clear the final score display
-            clearScoreboard(); // Clear the scoreboard
-            document.getElementById("round-result").textContent = ""; // Clears the round result message//
-            
-        }
-            document.getElementById("clear-button").addEventListener("click", restartGame);
-    </script>
-    
-<footer>
-    <a class="back-arrow" href="index.html">
-    <img src="ImgRock\homeicon.png" alt="Home Icon"></a>
+    </script>       
+    <footer>
+        <a class="back-arrow" href="index.html">
+        <img src="ImgRock\homeicon.png" alt="Home Icon"></a>
 </footer>
 </body>
 </html>

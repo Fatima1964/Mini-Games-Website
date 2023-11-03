@@ -68,10 +68,10 @@ function displayRoundResult(round, result, player, computer) {
     const playerCell = newRow.insertCell(2);
     const computerCell = newRow.insertCell(3);
 
-    roundCell.textContent = round; // Display the round number.
-    resultCell.textContent = result; // Display the result message.
-    playerCell.textContent = player; // Display the player's score.
-    computerCell.textContent = computer; // Display the computer's score.
+    roundCell.textContent = round; //  Displays the round number.
+    resultCell.textContent = result; // " the result message.
+    playerCell.textContent = player; // " the player's score.
+    computerCell.textContent = computer; //  " the computer's score.
 }
 
 // Function to exit the game and return to the home page.
@@ -88,7 +88,7 @@ function clearScoreboard() {
     }
 }
 
-// Defines the restartGame function
+// Function to restartGame 
 function restartGame() {
     roundCount = 0;
     playerScore = 0;
@@ -104,4 +104,4 @@ document.getElementById("clear-button").addEventListener("click", restartGame);
 // Initialize the game
 updateFinalScore();
 
-// End of the JavaScript code
+
