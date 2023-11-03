@@ -1,10 +1,5 @@
 // List of words to choose from
-const wordList = [
-    "mango", "school", "quiz", "zootopia", "holiday",
-    "teacher", "cricket", "canada", "kuwait", "programmer",
-    "apple", "beach", "dog", "elephant", "guitar",
-    "hamburger", "jazz", "kangaroo", "mountain", "notebook"
-];
+const wordList = ["mango", "school", "quiz", "zootopia", "holiday", "teacher", "cricket", "canada", "kuwait", "programmer"];
 
 // Define a category and clues for each word
 const wordCategories = {
@@ -111,6 +106,7 @@ function initializeGame() {
         incorrectGuesses,
     };
 }
+
 function selectRandomWord() {
     const randomIndex = Math.floor(Math.random() * wordList.length);
     return wordList[randomIndex].toLowerCase();
@@ -135,20 +131,52 @@ function revealHint() {
         }
     }
 }
+function giveClue() {
+    const wordToGuess = game.wordToGuess;
+    const categoryInfo = wordCategories[wordToGuess];
+    
+    if (categoryInfo && categoryInfo.clues.length > 0 && cluesLeft > 0) {
+        const randomIndex = Math.floor(Math.random() * categoryInfo.clues.length);
+        const clue = categoryInfo.clues.splice(randomIndex, 1)[0];
+        alert(`Clue: ${clue}`);
+        cluesLeft--;
+
+        if (cluesLeft === 0) {
+            document.getElementById('give-clue-button').setAttribute('disabled', true);
+        }
+    } else if (cluesLeft === 0) {
+        alert("No more clues left.");
+    }
+    updateGameDisplay();
+}
+
+
+// Update the hangman graphic based on incorrect guesses
+function updateHangmanGraphic() {
+    const hangmanParts = ["head", "body", "left-arm", "right-arm", "left-leg", "right-leg"];
+    for (let i = 0; i < game.incorrectGuesses; i++) {
+        document.getElementById(hangmanParts[i]).style.display = 'block';
+    }
+}
 function revealVowel() {
     if (vowelsLeft > 0) {
         const vowels = 'aeiou';
-        const wordToGuess = game.wordToGuess;
         const guessedWordArray = game.guessedWord.split('');
         let vowelRevealed = false;
 
-        for (let i = 0; i < wordToGuess.length; i++) {
-            const letter = wordToGuess[i];
+        for (let i = 0; i < game.wordToGuess.length; i++) {
+            const letter = game.wordToGuess[i];
             if (vowels.includes(letter) && guessedWordArray[i] === '_') {
                 guessedWordArray[i] = letter;
                 vowelRevealed = true;
                 vowelsLeft--;
-                break; // Exit the loop after revealing one vowel
+
+                if (vowelsLeft === 0) {
+                    document.getElementById('vowel-button').setAttribute('disabled', true);
+                }
+
+                // Break out of the loop after revealing one vowel
+                break;
             }
         }
 
@@ -162,26 +190,6 @@ function revealVowel() {
         alert("No more vowels left to reveal.");
     }
 }
-
-
-
-
-
-
-function giveClue() {
-    const wordData = wordCategories[game.wordToGuess];
-    if (wordData && wordData.clues && wordData.clues.length > 0) {
-        const nextClue = wordData.clues.shift();
-        alert(`Clue: ${nextClue}`);
-        cluesLeft--; // Decrease the number of available clues
-    } else {
-        alert(`No more clues available for this word.`);
-    }
-
-    // Update the game display if needed
-    updateGameDisplay();
-}
-
 
 
 function updateGameDisplay() {
@@ -255,21 +263,57 @@ vowelButton.addEventListener('click', revealVowel);
 const giveClueButton = document.getElementById('give-clue-button');
 giveClueButton.addEventListener('click', giveClue);
 
-// Add this code to reset the game when the "Play Again" button is clicked
+
+// Add an event listener for the "Play Again" button
+const playAgainButton = document.getElementById('play-again-button');
+playAgainButton.addEventListener('click', resetGame);
+
 function resetGame() {
     game = initializeGame();
     hintsLeft = 3;
     cluesLeft = 3;
     vowelsLeft = 5;
-    updateGameDisplay();
 
-    // Enable the "Give Clue" button after resetting
-    const giveClueButton = document.getElementById('give-clue-button');
-    giveClueButton.removeAttribute('disabled');
+    // Enable all the buttons
+    document.getElementById('hint-button').removeAttribute('disabled');
+    document.getElementById('vowel-button').removeAttribute('disabled');
+    document.getElementById('give-clue-button').removeAttribute('disabled');
+
+    // Hide all Hangman parts
+    const hangmanParts = ["head", "body", "left-arm", "right-arm", "left-leg", "right-leg"];
+    hangmanParts.forEach(part => {
+        document.getElementById(part).style.display = 'none';
+    });
+
+    updateGameDisplay();
 }
 
-const playAgainButton = document.getElementById('play-again-button');
-playAgainButton.addEventListener('click', resetGame);
+// Make a guess when a letter button is clicked
+function makeGuess(letter) {
+    if (!game.wordToGuess.includes(letter)) {
+        game.incorrectGuesses++;
+        updateHangmanGraphic();
 
-initializeGame();
-updateGameDisplay();
+        if (game.incorrectGuesses >= 6) {
+            losses++;
+            updateScoreboard();
+            alert("You lost. The word was: " + game.wordToGuess);
+            resetGame();
+        }
+    } else {
+        for (let i = 0; i < game.wordToGuess.length; i++) {
+            if (game.wordToGuess[i] === letter) {
+                game.guessedWord = game.guessedWord.slice(0, i) + letter + game.guessedWord.slice(i + 1);
+            }
+        }
+
+        if (hasPlayerWon()) {
+            wins++;
+            updateScoreboard();
+            alert("Congratulations! You won! The word is: " + game.wordToGuess);
+            resetGame();
+        }
+    }
+
+    updateGameDisplay();
+}
