@@ -23,11 +23,14 @@ Technologies & Tools Used:
 
 Usage:
 
+Excluding merges, 4 authors have pushed 44 commits to main and 44 commits to all branches. 
+
+On main, 40 files have changed and there have been 2,596 additions and 607 deletions.
 
 Collaborators:
 RockPaperScissors By: Fatima Farhat
 Hangman By: Sundas Khan
-TicTacToe By: Fatimah
+TicTacToe By: Fatimah Ahmad
 BlackJack By: Suganthi Ramachandran
 
 

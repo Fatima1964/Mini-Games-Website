@@ -15,9 +15,9 @@ function updateFinalScore() {
     if (playerScore > computerScore) {
         gameResultMessage.textContent = "🚀 Congratulations You Won! 🚀";
     } else if (playerScore < computerScore) {
-        gameResultMessage.textContent = "Better Luck Next Time!";
-    } else {
-        gameResultMessage.textContent = "";
+        gameResultMessage.textContent = "☹Better Luck Next Time!☹";
+    } else if (playerScore == computerScore) {
+        gameResultMessage.textContent = "😐It's A Tie!😐";
     }
 }
 
