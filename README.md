@@ -36,7 +36,20 @@ RockPaperScissors Game By: Fatima Farhat
 
 Hangman Game By: Sundas Khan
 
-TicTacToe Game By: Fatimah Ahmed
+TicTacToe Game By: Fatimah Ahmad
+The objective of this simple Tic Tac Toe game is to get your markers (X or O) to get in a line within the 3x3 grid provided. The markers are to be placed and the game checks for eight possible winning combinations (three horizontal, three vertical, and two diagonal).
+I have provided an explanation for each of the following functions which make up this game:
+Constants: This section defines constants, such as class names for X and O, winning combinations, and references to DOM elements used in the game.
+startGame(): This function initializes the game, sets the initial state, and sets up event listeners for the cells which markers will be placed into.
+handleClick(e): This handles the click event when a cell is selected, allowing the current player to place their mark (X or O), checks for wins, detects draws, and switches turns between players which is also indicated under the board/grid.
+endGame(draw): This function displays a message when the game ends, indicating the winner or a draw. It takes a parameter (draw) to determine if the game ended in a draw.
+isDraw(): This checks if the game has ended in a draw by examining all cells to see if they contain X or O marks- if it detencts no winning combination, there is no winner and the game ends in a draw.
+placeMark(cell, currentClass): This function adds the current player's mark (X or O) to the cell which is clicked by the player.
+swapTurns(): This prompts the current player's turn, switching between X and O and updating the player's turn display.
+setBoardHoverClass(): This function updates the board's class to show whose turn it is, providing a visual indicator of the current player.
+checkWin(currentClass): This checks for a win based on the winning combinations, making sure that a player has placed their marks in a pattern which matches any of the winning combinations.
+chatGPT reference places- how to play container (CSS line 285 to line 287) and home icon/back arrow (CSS line 296 to 299).
+
 
 BlackJack Game By: Suganthi Ramachandran
 To run and understand the game: 
