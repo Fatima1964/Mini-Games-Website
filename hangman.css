@@ -6,33 +6,27 @@ body, ul {
   box-sizing: border-box;
 }
 
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #d8b3b3;
-  color: #333;
-}
-
-/* Style the header */
+/* header */
 header {
+  align-items: center;
   background-color: #d8b3b3;
   text-align: center;
-  font-family: 'Segoe';
+  font-family:'Segoe';
+  margin: 0;
 }
 
 .title {
-  font-size: 36px;
-  margin: 0;
-  color: #333;
+font-size: 22px;
+margin: 0;
+color: #333;
 }
 
-/* Style the navigation bar */
 nav ul {
   background-color: #9a7575;
   text-align: center;
-  padding: 30px;
+  padding: 40px;
   font-size: 20px;
+  vertical-align: top;
 }
 
 nav ul li {
@@ -41,23 +35,23 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #f4efef;
+  color: #141010;
   text-align: center;
   padding: 30px;
-  transition: background-color 0.3s;
+  transition: background-color 0.2s;
 }
 
 nav ul li a:hover {
-  background-color: #765a68;
+  background-color: #b0869a;
   color: #ffff;
 }
 
-/* Style the dropdown menu */
+/* dropdown menu */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #333;
-  font-size: 14px;
+  background-color: #ac9a9a;
+  font-size: 16px;
   z-index: 1;
 }
 
@@ -69,7 +63,6 @@ nav ul li.active a {
   font-weight: bold;
 }
 
-/* Container Styles */
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -143,5 +136,23 @@ button {
   margin: 2px;
   border: none;
   border-radius:1px;
- 
+ }
+ #hangman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
 }
+
+#hangman svg {
+  width: 200px;
+  height: 200px;
+}
+
+#hangman svg line {
+  stroke: black;
+  stroke-width: 2;
+  fill: white;
+}
+
+ 

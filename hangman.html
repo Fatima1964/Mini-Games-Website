@@ -11,6 +11,7 @@
         <h1 class="title" id="title">QPArcade</h1>
         <nav>
             <ul>
+                <iframe src="logo.html" width="100px" height="100px" style="border:none;"></iframe>
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="games.html">Games &#9660;</a>
@@ -27,42 +28,68 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
+      <div class="container">
        <div class="instructions-box">
+        <img src="ImgHm/hang.jpg" alt="Hangman" height="120px" width="120x"/>
             <h2>Welcome To The Hangman</h2>
-            <p>Are you ready to test your word-guessing skills and unravel hidden words? In this thrilling game, you have the chance to prove your word mastery. Here's how it works:</p>
+            <p>"Welcome to Hangman, the classic word-guessing game that tests your vocabulary and wit!
+                 In this engaging and challenging game, you'll face the ultimate linguistic puzzle:
+                  guessing a hidden word one letter at a time.</p>
        
-       
-            <h3>How to Play:</h3>
+        <h3>How to Play:</h3>
             <ul>
-                <li>Guess the word one letter at a time.</li>
-                <li>You have a limited number of incorrect guesses, so choose wisely.</li>
-                <li>Feeling stuck? Use the "Hint" button for a helpful nudge.</li>
-                <li>Feeling bold? Try the "Guess a Vowel" button for an instant vowel advantage.</li>
+                <li>A word has been carefully selected for you to decipher. Your goal is to guess it by suggesting one letter at a time..</li>
+                <li>Beware, you have a limited number of incorrect guesses.</li>
+                <li>If you ever feel stuck, don't worry! You can use the 'Hint' button to reveal a single letter within the word.</li>
             </ul>
-            <p>Remember:</p>
+            <h4>Remember:</h4>
             <ul>
-                <li>Hints and vowel guesses are limited, so use them strategically.</li>
-                <li>Victory awaits the word detective who can uncover the hidden secrets!</li>
+                <li> Unlock a hidden vowel within the word to help you solve the puzzle.</li>
+                <li>Get hints related to the word's category to make guessing easier.</li>
             </ul>
-            <p>Start Guessing!</p>
+            <p>These tools can be your secret weapons in Hangman!"</p>
         
       </div>
         <div class="game-container">
             <p id="word-display">Word: _ _ _ _ _</p>
-            <p id="incorrect-guesses">Incorrect Guesses Left: 6</p>
             <div id="alphabet-buttons"
             ></div>
-             <button id="hint-button" >Hint</button>
+            <div id="hangman">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+                      <!-- Gallows -->
+                      <line x1="10" y1="90" x2="50" y2="90" stroke="black" stroke-width="4" />
+                      <line x1="30" y1="10" x2="30" y2="90" stroke="black" stroke-width="4" />
+                  
+                      <!-- Head -->
+                      <circle cx="30" cy="30" r="10" stroke="black" stroke-width="2" fill="white" id="head" style="display: none" />
+                  
+                      <!-- Body -->
+                      <line x1="30" y1="40" x2="30" y2="60" stroke="black" stroke-width="2" id="body" style="display: none" />
+                  
+                      <!-- Left Arm -->
+                      <line x1="30" y1="45" x2="20" y2="50" stroke="black" stroke-width="2" id="left-arm" style="display: none" />
+                  
+                      <!-- Right Arm -->
+                      <line x1="30" y1="45" x2="40" y2="50" stroke="black" stroke-width="2" id="right-arm" style="display: none" />
+                  
+                      <!-- Left Leg -->
+                      <line x1="30" y1="60" x2="20" y2="70" stroke="black" stroke-width="2" id="left-leg" style="display: none" />
+                  
+                      <!-- Right Leg -->
+                      <line x1="30" y1="60" x2="40" y2="70" stroke="black" stroke-width="2" id="right-leg" style="display: none" />
+                    </svg>
+                  </div>
+                  
+              <button id="hint-button" >Hint</button>
              <button id="vowel-button">Reveal Vowel</button>   
-              <button id="give-clue-button">Give Clue</button>
-             <button id="play-again-button">Play Again</button>
+             <button id="give-clue-button">Give Clue</button>
+              <button id="play-again-button">Play Again</button>
             <div class="score-container">
                 <h2>Score</h2>
                 <p>Wins: <span id="wins">0</span></p>
                 <p>Losses: <span id="losses">0</span></p>
             </div>
-    <footer>
+         <footer>
         <a class="back-arrow" href="index.html">
             <img src="ImgRock/homeicon.png" alt="Home Icon">
         </a>

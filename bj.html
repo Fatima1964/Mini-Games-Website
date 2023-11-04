@@ -15,6 +15,7 @@
         <nav>
             <ul>
                 <!-- Navigation Links -->
+                <iframe src="logo.html" width="100px" height="100px" style="border:none;"></iframe>
                 <li><a href="index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="games.html">Games &#9660;</a>
@@ -32,14 +33,18 @@
             </ul>
         </nav>
     </header>
-    
+ <!--Main contents of the page is inside one container-->   
 <div class="container">
-   <h2>BlackJack Game</h2> 
-    <main id="gamegrid">
+   <h2>BlackJack Game</h2>
+    <!--Inside container the contents are put in a Grid-->
+   <main id="gamegrid"> 
+        <!--First Section of the Grid-->
         <section id="gr_1">
+            <!--Game Interface or The Game Board-->
             <section class="minigame">
                 <h2>Game Board</h2>
                 <P>Select a Number</P>
+                    <!--Number buttons for the player to select-->
                     <div id="buttons">
                         <button class="numberbutton" data-value="1">1</button>
                         <button class="numberbutton" data-value="2">2</button>
@@ -47,22 +52,26 @@
                         <button class="numberbutton" data-value="4">4</button>
                         <button class="numberbutton" data-value="5">5</button>
                     </div>
-    
+                    <!--Display area for game outcomes-->
                     <div id="result"></div>
-                    <button id = "replayButton" style="display: none;">PlayAgain</button>
-                
+                    <!--Button to replay the game.Initially hidden-->
+                    <button id = "replayButton" style="display: none;">PlayAgain</button>                
             </section>
+            <!--Video Link section for embeded youtube video for the full version of the BlackJack game-->
             <section class="videolink">
                 <h3>Want to know the full version?Please watch the video below.</h3>
                 <iframe height ="200px" width="600px" src ="https://www.youtube.com/embed/eyoh-Ku9TCI?si=Lyzqfu92A5PADT9y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </section>
-        </section>
+        </section><!--End of first section of the Grid-->
+
+        <!--Second Section of the Grid-->
         <section id ="gr_2">
+            <!--This section explains the instructions to play the mini version game-->
             <section class="GameInfo">
                 <img id="bj21"  src="imgBJ/BJ21.png"  alt="BlackJack Image" height="120px" width="120x"/>
                 <h2>The Game of Luck</h2>
                 <h4>(Mini Version)</h4>
-                <p><h2>How to Play?</h2></br>                    
+                <p><h2>How to Play?</h2></br>                 
                     1.Click on a number button to select your number.</br>
                     2.A random number will be generated for the dealer.</br>
                     3.Your selected number and the dealer's random number will be added to your total score.</br>
@@ -75,12 +84,15 @@
                     Enjoy your mini blackjack game and have fun!                    
                 </p>
             </section>
-        </section>
-    </main>
-</div>
-    
+        </section><!--End of Second section of the Grid-->
 
+    </main><!--End of the Grid-->
+
+</div><!--End of the Container-->
+    
+<!--Link for Javascript file for Game Logic-->
 <script src="bj.js"></script>
+<!--Footer Section with a back to home button-->
 <footer>
     <a class="back-arrow"
     href="index.html">

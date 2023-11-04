@@ -60,3 +60,19 @@
     background: linear-gradient(to bottom, #9434bd, #aa88e0);
     transform: scale(1.05);
 }
+@media (max-width: 768px) {
+    .signup-form {
+        background: linear-gradient(to bottom, #f9f7f6, #f1eaf6);
+        padding: 60px;
+        max-width: 500px;
+        margin: 0 auto;
+        border-style: double;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        margin-top: 60px;
+        margin-bottom: 60px;
+        text-align: center;
+        transition: box-shadow 0.3s, transform 0.3s;
+    }
+    
+}

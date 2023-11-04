@@ -13,6 +13,7 @@ header {
     font-family:'Segoe';
     height: max-content;
     margin: 0 auto;
+    margin-bottom:20px;
 }
 
 .title {
@@ -63,7 +64,12 @@ nav ul li.active a {
     font-weight: bold;
 }
 
-
+.title2 {
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    color:#181313;
+}
 .game-container {
     background: linear-gradient(45deg, #cbc2f6, #f68176);
     border: 2px solid #1d1b1b;
@@ -76,8 +82,11 @@ nav ul li.active a {
     text-align: center;
     position: relative;
     margin: 10px auto;
-    width: 800px;
-    height: 125px;
+    position: relative;
+    width: 600px;
+    height: 200px;
+    border: 2px double #333;
+    margin-bottom: 40px;
 
 }
 
@@ -94,32 +103,37 @@ nav ul li.active a {
         text-align: center;
         position: relative;
         margin: auto;
-        width: 800px;
+        width: 850px;
         Height: 850px;
-        padding: 40px;
+        padding: 20px;
 }
 
 .game-description {
-    display: none;
+    display: block;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(157, 102, 102, 0.8);
     color: #fff;
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 15px;
+    text-align: justify; /* Change 'top' to 'bottom' */
+    padding: 30px;
     left: 0;
     right: 0;
+    bottom: 0;
+    opacity: 0; /* Set the initial opacity to 0 */
     transition: opacity 0.2s;
 }
 
 .game-container:hover .game-description {
-    display: block;
-    transform: translateY(50%);
-
+    opacity: 1; /* When the container is hovered, set opacity to 1 */
 }
 
 .game-display {
     padding:10px;
+}
+
+.icon {
+    padding: 30px;
+    margin-left: 30px;
+    
 }
 
 table {
@@ -181,24 +195,16 @@ table tr:hover {
 }
 
 
-.game-container {
-    padding-top:20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-    margin-bottom: 50px;
-}
-
 h1 {
     text-align: center;
     color: #0d0d0f;
+    font-size: 22px;
 }
 
 .player-choice, .computer-choice, .result {
     flex: 1;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .choice-icons {
@@ -220,7 +226,7 @@ h1 {
 }
 
 .icon:hover {
-    background-color: #eee; 
+    background-color: #c3a3b4; 
 }
 
 .icon img {
@@ -228,6 +234,11 @@ h1 {
     height: auto;
 }
 
+.image {
+    position: top;
+
+
+}
 #round-result {
     font-size: 18px;
     margin-top: 10px;
@@ -241,6 +252,10 @@ h1 {
 
 #computer-icon {
     margin-top: 20px;
+}
+
+#game-result-message {
+    font-size: 30px;
 }
 
 .clear-button {
@@ -307,7 +322,7 @@ body{
     /* Adjust styles for smaller screens here */
     .game-container,
     .game-container2 {
-        width: 100%;
+        width:80%;
         height: auto;
         margin: 10px auto;
     }

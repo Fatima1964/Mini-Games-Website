@@ -11,20 +11,21 @@ header {
     background-color: #d8b3b3;
     text-align: center;
     font-family:'Segoe';
-
+    height: max-content;
+    margin: 0 auto;
 }
+
 .title {
-font-size: 36px;
+font-size: 22px;
 margin: 0;
 color: #333;
 }
 
-/* navigation bar */
 nav ul {
     background-color: #9a7575;
     text-align: center;
     padding: 30px;
-    font-size: 20px;
+    font-size: 18px;
     vertical-align: top;
 }
 
@@ -34,27 +35,26 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #f4efef;
+    color: #141010;
     text-align: center;
     padding: 30px;
-    transition: background-color 0.3s;
-
+    transition: background-color 0.2s;
 }
 
 nav ul li a:hover {
-    background-color: #765a68;
+    background-color: #b0869a;
     color: #ffff;
-
 }
 
 /* dropdown menu */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
-    font-size: 14px;
+    background-color: #ac9a9a;
+    font-size: 16px;
     z-index: 1;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -157,7 +157,7 @@ nav ul li.active a {
 /*Responsive*/
 @media (max-width: 768px) {
     .login-form {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin: 10px auto;
     }
