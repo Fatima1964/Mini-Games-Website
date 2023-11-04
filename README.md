@@ -30,7 +30,8 @@ BlackJack - Popular Card game based only on **Luck**. Set your goal to score 21 
 
 
 # Collaborators:
-Home Page and Contact Page By: Fatima Farhat
+Home Page and Contact Page By: Fatima Farhat 
+The homepage has a unique layout with revolving cards and a cube which displays our Logo and the slogan, Just Have Fun!  The vidoes from youtube and the instructors detailed instructional videos were the main source of our learning.  ChatGPT helped with the placement of the logo in the header via an Iframe tag. The colors were chosen for their subtleness.  The team members also contributed to the final design of the Home Page and the Contact Page. There insights were the determining factor in our overall design.
 
 RockPaperScissors Game By: Fatima Farhat
 To play Rock Paper Scissors user chooses an icon and the game is played against the computer's
@@ -53,8 +54,6 @@ The Hangman Game is a classic word-guessing game designed with a user-friendly i
 
 The Hangman graphic in this project has been created with inspiration from ChatGPI. The dynamic rendering of Hangman body parts based on player's incorrect guesses is a creative application inspired by the capabilities of ChatGPT.
 
-
-
 TicTacToe Game By: Fatimah Ahmed
 
 BlackJack Game By: Suganthi Ramachandran
@@ -65,7 +64,7 @@ chatGPT reference places- playAgain button show and hide command(JS line 55 and 
 github collaboration - Every time a team member pushes, pulled and made sure links are connected and checked for functionality. 
 
 Acknowledgments:
-We thank our instructors for guiding us and answering our questions for the development of this project. 
+We thank our instructors for guiding us and answering our questions for the development of this project. We would also like to acknowledge our team effort as contributors and the team spirit we displayed throughout the project.
 
 
 Coding In Colour Project-Mini Games Website Team Collaboration
