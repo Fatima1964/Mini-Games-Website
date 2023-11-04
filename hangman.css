@@ -91,7 +91,7 @@ game-container {
   text-align: center;
 }
 
-/* Improved game styles (You can modify these as needed) */
+/* Improved game styles */
 #word-display {
 
   font-weight: bold;
@@ -155,4 +155,8 @@ button {
   fill: white;
 }
 
- 
+ /*Body background color and default text color*/
+body{
+  background-color: #d8b3b3;
+  color: #333;
+}
