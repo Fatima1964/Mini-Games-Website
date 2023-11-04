@@ -33,6 +33,8 @@ BlackJack - Popular Card game based only on **Luck**. Set your goal to score 21 
 Home Page and Contact Page By: Fatima Farhat
 
 RockPaperScissors Game By: Fatima Farhat
+To play Rock Paper Scissors user chooses an icon and the game is played against the computer's
+random choice which activates both playRound and computerPlay which leads to the displayRoundResult. After the 5 rounds a message is displayed accordingly. Finally the board is either cleared or the user exits the game with either button and the game ends on a restart function.
 
 Hangman Game By: Sundas Khan
 

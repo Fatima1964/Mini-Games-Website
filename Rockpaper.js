@@ -12,12 +12,14 @@ function updateFinalScore() {
     finalPlayerScore.textContent = playerScore; // Update player's final score.
     finalComputerScore.textContent = computerScore; // Update computer's final score.
 
-    if (playerScore > computerScore) {
-        gameResultMessage.textContent = "🚀 Congratulations You Won! 🚀";
-    } else if (playerScore < computerScore) {
-        gameResultMessage.textContent = "☹Better Luck Next Time!☹";
-    } else if (playerScore == computerScore) {
-        gameResultMessage.textContent = "😐It's A Tie!😐";
+    if (roundCount === 5) { // Check if it's the final round.
+        if (playerScore > computerScore) {
+            gameResultMessage.textContent = "🚀 Congratulations You Won! 🚀";
+        } else if (playerScore < computerScore) {
+            gameResultMessage.textContent = "☹ Better Luck Next Time! ☹";
+        } else if (playerScore === computerScore) {
+            gameResultMessage.textContent = "😐 It's A Tie! 😐";
+        }
     }
 }
 
@@ -88,7 +90,7 @@ function clearScoreboard() {
     }
 }
 
-// Function to restartGame 
+// Function to restartGame
 function restartGame() {
     roundCount = 0; // reset variables to zero
     playerScore = 0;
@@ -103,5 +105,3 @@ document.getElementById("clear-button").addEventListener("click", restartGame);
 
 // Initialize the game
 updateFinalScore();
-
-
