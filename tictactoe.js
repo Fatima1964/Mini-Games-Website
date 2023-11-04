@@ -15,6 +15,7 @@ const board = document.getElementById('board')
 const winningMessageElement = document.getElementById('winningMessage')
 const restartButton = document.getElementById('restartButton')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
+const playerTurnElement = document.getElementById('player-turn');
 let circleTurn
 
 startGame()
@@ -22,7 +23,8 @@ startGame()
 restartButton.addEventListener('click', startGame)
 
 function startGame() {
-  circleTurn = false
+  circleTurn = false;
+  playerTurnElement.innerText = "X's Turn";
   cellElements.forEach(cell => {
     cell.classList.remove(X_CLASS)
     cell.classList.remove(CIRCLE_CLASS)
@@ -67,7 +69,8 @@ function placeMark(cell, currentClass) {
 }
 
 function swapTurns() {
-  circleTurn = !circleTurn
+  circleTurn = !circleTurn;
+  playerTurnElement.innerText = circleTurn ? "O's Turn" : "X's Turn";
 }
 
 function setBoardHoverClass() {

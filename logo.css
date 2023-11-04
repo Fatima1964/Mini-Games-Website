@@ -44,12 +44,13 @@ body {
 .left {
     color: rgb(45, 11, 11);
 }
-.front  { transform: translateZ(30px); } 
-.back   { transform: rotateY(180deg) translateZ(30px); } 
-.right  { transform: rotateY(90deg) translateZ(30px); } 
-.left   { transform: rotateY(-90deg) translateZ(30px); } 
-.top    { transform: rotateX(90deg) translateZ(30px); } 
-.bottom { transform: rotateX(-90deg) translateZ(30px); } 
+
+.front  { transform: translateZ(30px); } /*reference: youtube video*/
+.back   { transform: rotateY(180deg) translateZ(30px); } /*reference: youtube video*/
+.right  { transform: rotateY(90deg) translateZ(30px); } /*reference: youtube video*/
+.left   { transform: rotateY(-90deg) translateZ(30px); } /*reference: youtube video*/
+.top    { transform: rotateX(90deg) translateZ(30px); }  /*reference: youtube video*/
+.bottom { transform: rotateX(-90deg) translateZ(30px); }  /*reference: youtube video*/
 
 .face img {
     width: 100%;
