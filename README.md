@@ -39,19 +39,18 @@ random choice which activates both playRound and computerPlay which leads to the
 
 Hangman Game By: Sundas Khan
 The Hangman Game is a classic word-guessing game designed with a user-friendly interface for players of all ages, with a special focus on making it accessible and enjoyable for seniors. 
-## How to Run and Play the Hangman Game
-**Game Rules**:
+How to Run and Play the Hangman Game
+Game Rules:
    - The Hangman Game is a word-guessing game. Your goal is to guess a hidden word, one letter at a time.
-**Make a Guess**:
+Make a Guess:
    - You can guess letters by clicking on the alphabet buttons displayed on the screen.
-**Hints and Clues**:
+Hints and Clues:
    - You have the option to use hints, reveal vowels, and get clues to help you along the way.
-**Scoring**:
+Scoring:
    - Your wins and losses are displayed, allowing you to track your progress.
- **Play Again**:
+ Play Again:
    - If you want to play another round, simply click the "Play Again" button to start a new game.
-## ChatGPT Reference
-
+ChatGPT Reference:
 The Hangman graphic in this project has been created with inspiration from ChatGPI. The dynamic rendering of Hangman body parts based on player's incorrect guesses is a creative application inspired by the capabilities of ChatGPT.
 
 TicTacToe Game By: Fatimah Ahmed
