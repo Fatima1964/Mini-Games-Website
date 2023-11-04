@@ -90,7 +90,7 @@ function clearScoreboard() {
 
 // Function to restartGame 
 function restartGame() {
-    roundCount = 0;
+    roundCount = 0; // reset variables to zero
     playerScore = 0;
     computerScore = 0;
     updateFinalScore(); // Clear the final score display
