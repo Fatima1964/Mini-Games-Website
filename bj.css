@@ -1,3 +1,5 @@
+/*Styling details for BlackJack Game Page*/
+/*Resetting default values for body and unorderedlist*/
 body, ul {
     margin: 0;
     padding: 0;
@@ -5,7 +7,7 @@ body, ul {
     box-sizing: border-box;
 }
 
-/* header */
+/* header styles */
 header {
     align-items: center;
     background-color: #d8b3b3;
@@ -15,12 +17,14 @@ header {
     margin: 0 auto;
 }
 
+/*Styling for website title*/
 .title {
 font-size: 22px;
 margin: 0;
 color: #333;
 }
 
+/*Navigation Menu*/
 nav ul {
     background-color: #9a7575;
     text-align: center;
@@ -29,10 +33,12 @@ nav ul {
     vertical-align: top;
 }
 
+/*Navigation menu item*/
 nav ul li {
     display: inline;
 }
 
+/*Navigation menu links*/
 nav ul li a {
     text-decoration: none;
     color: #141010;
@@ -41,6 +47,7 @@ nav ul li a {
     transition: background-color 0.2s;
 }
 
+/*Navigation menu link hover state*/
 nav ul li a:hover {
     background-color: #b0869a;
     color: #ffff;
@@ -55,15 +62,17 @@ nav ul li a:hover {
     z-index: 1;
 }
 
+/*show dropdown menu on hover*/
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+/*Active menu item*/
 nav ul li.active a {
     font-weight: bold;
 }
 
-
+/*Main content container*/
 .container {
     font-size: large;
     text-align: center;
@@ -80,6 +89,8 @@ nav ul li.active a {
     width: 1000px;
     height: 900px;
 }
+
+/*Grid Layout for game sections*/
 #gamegrid{
   display: grid;
   grid-template-columns: 75% 25%;
@@ -87,6 +98,8 @@ nav ul li.active a {
   padding: 20px;
   margin: 20px;
 }
+
+/*Minigame (Game Board) Section*/
 .minigame{
     font-weight: 600;
     color:ghostwhite;
@@ -104,13 +117,14 @@ nav ul li.active a {
     background-color: rgb(0,0,0,0.5);    
 }
 
+/*Paragraph within Minigame(Game Board) section*/
 p{
     font-size: large;
     font-weight: 800;
 
 }
 
-   
+ /*Number Buttons for player selection*/  
 .numberbutton{
     margin: 5px;
     padding: 10px 20px;
@@ -121,12 +135,13 @@ p{
     
 }
 
-
+/*Button click effect*/
 .numberbutton:active{
     background-color: aqua;
     
 }
 
+/*PlayAgain(replayButton)*/
 button#replayButton {
     display: relative;
     margin-top: 20px;
@@ -140,16 +155,20 @@ button#replayButton {
     margin-left: 300px;
 }
 
+/*playAgain button hover effect*/
 button#replayButton:hover {
     background-color: #45a049;
 }
 
+/*playOutcomes display area*/
 #result {
     margin-top: 20px;
     font-size: 18px;
     font-weight:900;
-    color:rgb(6, 6, 190);
+    color:darkblue;
 }
+
+/*Video link section*/
 .videolink{
   display:inline-block;
   flex-direction:column;
@@ -160,6 +179,7 @@ button#replayButton:hover {
   padding-bottom: 30px;
 }
 
+/*Game Instruction section*/
 .GameInfo {
   min-width: 200px;
   height: 800px;
@@ -177,9 +197,12 @@ button#replayButton:hover {
     
 }
 
+/*Image in the game instruction section*/
 #bj21{
     display:flexbox
 }
+
+/*Back to home button*/
 .back-arrow {
     position: fixed;
     bottom: -5px;
@@ -190,6 +213,7 @@ button#replayButton:hover {
     transition: opacity 0.3s;
 }
 
+/*Back to Home -Home Icon Image*/
 .back-arrow img {
     width: 125px; 
     height: 125px; 
@@ -197,11 +221,134 @@ button#replayButton:hover {
     transition: opacity 0.3s;
 }
 
+/*Home Icon hover*/
 .back-arrow:hover img {
     opacity: 0.7; 
 }
+
+/*Body background color and default text color*/
 body{
     background-color: #d8b3b3;
     color: #333;
 }
+
+/*Media queries for responsive design*/
+/*referred chatGPT still didn't work as i wanted */
+/*Adjustments for smaller screens*/
+@media (max-width: 425px) {
+
+    title{
+        font-size:18px;
+    }
+
+    nav ul{
+        font-size:16px;
+        padding:20px;
+    }
+    
+    body{
+        font: size 14px;
+    }
+ 
+    .minigame {
+        height:300px;
+        font-size: 16px;
+    }
+
+    .videolink {
+        margin-top: 50px;
+        width:90%;
+    }
+
+    .GameInfo{
+        height:auto;
+        width:90%;
+        padding: 15px;
+        font-size:14px;
+        margin-left:auto;
+    }
+
+    #BJ21{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/*Adjustments for tablets*/
+@media (min-width: 426px) and (max-width: 767px){
+    body{
+        font-size:16px;
+    }
+
+    .title{
+        font: size 20px;
+    }
+
+    .minigame{
+        height: 350px;
+        font-size: 18px;
+
+    }
+    
+    nav ul{
+        font-size: 18px;
+        padding: 25px;
+    }
+    .videolink{
+        margin-top: 75px;
+        width:80%;
+    }
+
+    .GameInfo {
+        height: auto;
+        width:80%;
+        padding:20px;
+        font-size:16px;
+        margin-left: auto;
+    }
+
+    #BJ21{
+        width:120px;
+        height:120px;
+    }
+}
+
+/*Adjustments for Laptops and other big screens*/
+@media (min-width: 768px){
+    body{
+        font-size:18px;
+    }
+    .title{
+        font-size:24px
+    }
+
+    .minigame{
+        height:400px;
+        font-size:20px;
+    }
+
+    nav ul{
+        font-size:20px;
+        padding:30px;
+    }
+
+    .videolink{
+        margin-top: 100px;
+        width: 80%
+    }
+
+    .GameInfo{
+        height: 800px;
+        width: 100px;
+        font-size: 60%;
+        padding: 30px;
+        margin-left: auto;
+    }
+
+    #BJ21{
+        width: 150px;
+        height: 150px;
+    }
+}
+
 
